@@ -5,10 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "start": "node server.js"
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "express": "^4.17.1",
+    "jquery": "^3.4.1",
     "vue": "^2.6.10"
   },
   "devDependencies": {
@@ -27,8 +29,7 @@
       "node": true
     },
     "extends": [
-      "plugin:vue/essential",
-      "@vue/prettier"
+      "plugin:vue/essential"
     ],
     "rules": {},
     "parserOptions": {
