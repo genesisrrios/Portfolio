@@ -31,10 +31,10 @@
       </li>
     </ul>
     <ul class="side-bar">
-      <li class="list-right" ><a id="about" style="text-decoration:underline;">Sobre Mi</a></li>
-      <li class="list-right"  ><a id="experience">Experiencia</a></li>
-      <li class="list-right"  ><a id="portafolio">Portafolio</a></li>
-      <li class="list-right" ><a id="contactme">Contactame</a></li>
+      <li class="list-right" ><a id="sidebar-about" href="#about" style="text-decoration:underline;">Sobre Mi</a></li>
+      <li class="list-right"  ><a id="sidebar-experience" href="#experience">Experiencia</a></li>
+      <li class="list-right"  ><a id="sidebar-portafolio" href="#portafolio">Portafolio</a></li>
+      <li class="list-right" ><a id="sidebar-contactme" href="#contactame">Contactame</a></li>
     </ul>
   </div>
 </template>
@@ -53,14 +53,14 @@ $(document).ready(function() {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 700) {
           $('body').addClass('changeColor');
-          $('#experience').css('text-decoration', 'underline');
-          $('#about').css('text-decoration', 'none');
+          $('#sidebar-experience').css('text-decoration', 'underline');
+          $('#sidebar-about').css('text-decoration', 'none');
 
         }
         if ($(this).scrollTop() <= 50) {
           $('body').removeClass('changeColor');
-          $('#experience').css('text-decoration', 'none');
-          $('#about').css('text-decoration', 'underline');
+          $('#sidebar-experience').css('text-decoration', 'none');
+          $('#sidebar-about').css('text-decoration', 'underline');
         }
     });    
   });
