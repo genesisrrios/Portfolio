@@ -1,21 +1,37 @@
 <template>
   <div id="app">
     <TheSideBar />
-    <InformationContainer/>
+    <TheMainText />
+    <TheExperienceInformationContainer/>
+    <TheProjectsContainer/>
     </div>
 </template>
 
 <script>
 import TheSideBar from "./components/TheSideBar";
-import InformationContainer from "./components/InformationContainer";
-
+import TheExperienceInformationContainer from "./components/TheExperienceInformationContainer";
+import TheMainText from "./components/TheMainText";
+import TheProjectsContainer from "./components/TheProjectsContainer";
 
 export default {
   name: "app",
-  components: { TheSideBar,InformationContainer },
+  components: { 
+    TheSideBar,
+    TheExperienceInformationContainer,
+    TheMainText,
+    TheProjectsContainer },
   mounted() {
 
   },
   methods: {}
 };
 </script>
+<style>
+body {
+    background:#e3dac9;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+</style>

@@ -31,9 +31,9 @@
       </li>
     </ul>
     <ul class="side-bar">
-      <li class="list-right" ><a id="sidebar-about" href="#about" style="text-decoration:underline;">Sobre Mi</a></li>
+      <li class="list-right" ><a id="sidebar-about" href="#about">Sobre Mi</a></li>
       <li class="list-right"  ><a id="sidebar-experience" href="#experience">Experiencia</a></li>
-      <li class="list-right"  ><a id="sidebar-portafolio" href="#portafolio">Portafolio</a></li>
+      <li class="list-right"  ><a id="sidebar-portafolio" href="#portafolio">Proyectos</a></li>
       <li class="list-right" ><a id="sidebar-contactme" href="#contactame">Contactame</a></li>
     </ul>
   </div>
@@ -48,23 +48,23 @@ export default {
   name: "TheSideBar",
   props: {}
 };
-$(document).ready(function() {
-  $(function() {
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 700) {
-          $('body').addClass('changeColor');
-          $('#sidebar-experience').css('text-decoration', 'underline');
-          $('#sidebar-about').css('text-decoration', 'none');
+// $(document).ready(function() {
+//   $(function() {
+//     $(window).scroll(function () {
+//         if ($(this).scrollTop() > 700) {
+//           $('body').addClass('changeColor');
+//           $('#sidebar-experience').css('text-decoration', 'underline');
+//           $('#sidebar-about').css('text-decoration', 'none');
 
-        }
-        if ($(this).scrollTop() <= 50) {
-          $('body').removeClass('changeColor');
-          $('#sidebar-experience').css('text-decoration', 'none');
-          $('#sidebar-about').css('text-decoration', 'underline');
-        }
-    });    
-  });
-});
+//         }
+//         if ($(this).scrollTop() <= 50) {
+//           $('body').removeClass('changeColor');
+//           $('#sidebar-experience').css('text-decoration', 'none');
+//           $('#sidebar-about').css('text-decoration', 'underline');
+//         }
+//     });    
+//   });
+// });
 
 </script>
 
@@ -94,10 +94,9 @@ $(document).ready(function() {
 .list-right a{
   padding-top: 45px;
   font-size: 25px;
-  color: #818181;
+  color:  #383030;
   transition: 0.3s;
   display: inline-block;
-  color: white;
   right: 0;
   margin-top: 20px;
   padding-left: 20px;
@@ -105,7 +104,7 @@ $(document).ready(function() {
 }
 
 .list-right:hover a {
-  color: black;
+  color:  #383030;
   cursor: pointer;
 
 }
