@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <TheSideBar />
-    <TheMainText />
-    <TheExperienceInformationContainer/>
-    <TheProjectsContainer/>
-    <TheContactUsForm/>
-    <TheTechnologiesContainer/>
+    <TheMainText id="about"/>
+    <TheExperienceInformationContainer id="experience"/>
+    <TheProjectsContainer id="projects"/>
+    <TheTechnologiesContainer id="technologies"/>    
+    <TheContactUsForm id="contactme"/>
     </div>
 </template>
 

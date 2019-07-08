@@ -1,22 +1,32 @@
 <template>
-    <div class="container">
+  <div class="container">
+    <div class="row">
       <div class="box box-text">
-           <div class="box-content">
-           </div>          
+        <div class="box-content">
+        </div>
       </div>
-        <div class="box box-text">
-           <div class="box-content">
-           </div>          
+      <div class="box box-text">
+        <div class="box-content"></div>
       </div>
-            <div class="box box-text">
-           <div class="box-content">
-           </div>          
-      </div>    
-    </div> 
+      <div class="box box-text">
+        <div class="box-content"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="box box-text">
+        <div class="box-content"></div>
+      </div>
+      <div class="box box-text">
+        <div class="box-content"></div>
+      </div>
+      <div class="box box-text">
+        <div class="box-content"></div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-
 export default {
   name: "TheProjectsContainer"
 };
@@ -24,29 +34,31 @@ export default {
 
 <style scoped>
 .container {
-    width: 75%;
-    display: flex;
-    flex-direction: row;
-    height:100vh;   
+  width: 100%;
+  height: 100vh;
 }
-.box-content{
-    padding:10px;
+.row {
+  display: flex;
+  flex-direction: row;
 }
-h1{
-    font-family: 'Baskerville';
-    font-size: 45px;
-    color: #383030;    
+.box-content {
+  padding: 10px;
 }
-.box{
-    width: 55%;
-    background-color: white;
-    border-radius: 25px;
-    justify-content: center;
-    margin:45px;
+h1 {
+  font-family: "Baskerville";
+  font-size: 45px;
+  color: #383030;
 }
-h2{
-    font-family: 'Baskerville';
-    color: #383030;
+.box {
+  height: 100%;
+  width: 55%;
+  background-color: white;
+  border-radius: 25px;
+  justify-content: center;
+  margin: 45px;
 }
-
+h2 {
+  font-family: "Baskerville";
+  color: #383030;
+}
 </style>

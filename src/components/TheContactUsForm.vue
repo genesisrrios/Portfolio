@@ -10,7 +10,10 @@
         <input placeholder="Numero de telefono" class="input-box" type="text" name="phone">
       </div>
       <div class="container-flex">
-        <input placeholder="Nota (opcional)" class="input-box" type="text" name="subject">
+        <input placeholder="Nota (opcional)" class="input-box" type="text" name="subject">        
+      </div>
+            <div class="container-flex">
+      <button class="btn" >Enviar</button>
       </div>
   </div>
 </template>
@@ -42,5 +45,15 @@ export default {
 	margin: 8px 0;
 	display: inline-block;
 	border: 1px solid #ccc;	
+}
+.btn{
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;  
+}
+.btn:hover{
+  cursor: pointer;
 }
 </style>
