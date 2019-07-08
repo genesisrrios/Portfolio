@@ -4,6 +4,8 @@
     <TheMainText />
     <TheExperienceInformationContainer/>
     <TheProjectsContainer/>
+    <TheContactUsForm/>
+    <TheTechnologiesContainer/>
     </div>
 </template>
 
@@ -12,6 +14,8 @@ import TheSideBar from "./components/TheSideBar";
 import TheExperienceInformationContainer from "./components/TheExperienceInformationContainer";
 import TheMainText from "./components/TheMainText";
 import TheProjectsContainer from "./components/TheProjectsContainer";
+import TheContactUsForm from "./components/TheContactUsForm";
+import TheTechnologiesContainer from "./components/TheTechnologiesContainer"
 
 export default {
   name: "app",
@@ -19,7 +23,10 @@ export default {
     TheSideBar,
     TheExperienceInformationContainer,
     TheMainText,
-    TheProjectsContainer },
+    TheProjectsContainer,
+    TheContactUsForm,
+    TheTechnologiesContainer
+     },
   mounted() {
 
   },
