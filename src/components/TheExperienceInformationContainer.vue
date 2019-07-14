@@ -3,23 +3,11 @@
       <div class="box box-text">
            <div class="box-content">
                <h1>-2019</h1>
-               <h2>Trabajo a tiempo completo programando aplicaciones web para 
-          Multisystems Inc. en San Juan lo que me ha dado la
-          oportunidad de ganar experiencia trabajando con proyectos 
-          a mayor escala que usuarios utilizan a diario; además participo 
-          de charlas relacionadas con programación web y me mantengo 
-          al día con las tecnologías más populares.</h2>
+               <h2>{{ $t("Experience.first") }}</h2>
           <h1>-2018</h1>
-          <h2>Me gradué de un Bachillerato enfocado en sistemas de información.</h2>
-          <h2>Complete un internado en Engine-4 en Bayamón  en el cual junto a 
-      un grupo de desarrolladores cree una página 
-      web para visualizar data.</h2>
-      <h2>Gane un <span class="tool-tip">Hackaton<span class="tool-tip-text">Es una maratón de 
-      desarrollo web; un encuentro de programadores cuyo objetivo es el desarrollo colaborativo 
-      de software. Los participantes se organizan en grupos y cada uno tiene proyectos y 
-      retos que conseguir.</span></span> en el cual junto a un grupo de desarrolladores
-       creamos una pagina web la cual seria utilizada como plataforma de educación para 
-       estudiantes puertorriqueños.</h2>
+          <h2>{{ $t("Experience.second") }}</h2>
+          <h2>{{ $t("Experience.third") }}</h2>
+          <h2>{{ $t("Experience.fourth") }} <span class="tool-tip">{{ $t("Experience.fifth") }}<span class="tool-tip-text">{{ $t("Experience.sixth") }}</span></span> {{ $t("Experience.seventh") }}</h2>
            </div>
       </div>
     </div> 

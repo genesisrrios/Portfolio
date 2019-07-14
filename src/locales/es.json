@@ -1,0 +1,28 @@
+{
+  "SideBar":{
+      "about":"Sobre mi",
+      "experience":"Experiencia",
+      "projects":"Proyectos",
+      "technologies":"Tecnologias",
+      "contactme":"Contactame"
+  },
+  "MainText":{
+    "introduction": "¡Hola! soy Génesis Rivera Rios , me especializo en resolver problemas para compañías de pequeño y mediano tamaño mediante la creación y diseño efectivo de paginas web de acuerdo a su necesidad."
+  },
+  "Experience"  :{
+    "first":"Trabajo a tiempo completo programando aplicaciones web para Multisystems Inc. en San Juan lo que me ha dado la oportunidad de ganar experiencia trabajando con proyectos a mayor escala que usuarios utilizan a diario; además participo de charlas relacionadas con programación web y me mantengo al día con las tecnologías más populares.",
+    "second":"Me gradué de un Bachillerato enfocado en sistemas de información.",
+    "third" : "Complete un internado en Engine-4 en Bayamón  en el cual junto a un grupo de desarrolladores cree una página web para visualizar data.",
+    "fourth":"Gane un ",
+    "fifth":"Hackaton",
+    "sixth":"Es una maratón de desarrollo web; un encuentro de programadores cuyo objetivo es el desarrollo colaborativo de software. Los participantes se organizan en grupos y cada uno tiene proyectos y retos que conseguir.",
+    "seventh":"en el cual junto a un grupo de desarrolladores creamos una pagina web la cual seria utilizada como plataforma de educación para estudiantes puertorriqueños."
+  },
+  "Contactme":{
+    "email":"Correo electronico",
+    "name":"Nombre",
+    "phone":"Numero de telefono",
+    "note":"Nota (opcional)",
+    "send":"Enviar"
+  }
+}

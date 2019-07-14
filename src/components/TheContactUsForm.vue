@@ -1,19 +1,19 @@
 <template>
     <div class="container">
       <div class="container-flex">
-        <input placeholder="Email" class="input-box" type="email" name="email">
+        <input :placeholder="$t('Contactme.email')" class="input-box" type="email" name="email">
       </div>
       <div class="container-flex">
-        <input placeholder="Nombre" class="input-box" type="text" name="name">
+        <input :placeholder="$t('Contactme.name')" class="input-box" type="text" name="name">
       </div>	  
       <div class="container-flex">
-        <input placeholder="Numero de telefono" class="input-box" type="text" name="phone">
+        <input :placeholder="$t('Contactme.phone')" class="input-box" type="text" name="phone">
       </div>
       <div class="container-flex">
-        <input placeholder="Nota (opcional)" class="input-box" type="text" name="subject">        
+        <input :placeholder="$t('Contactme.note')" class="input-box" type="text" name="subject">        
       </div>
             <div class="container-flex">
-      <button class="btn" >Enviar</button>
+      <button class="btn" >{{ $t("Contactme.send") }}</button>
       </div>
   </div>
 </template>
