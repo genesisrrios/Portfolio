@@ -1,26 +1,42 @@
 <template>
     <div class="container">
       <div class="container-flex">
-        <input :placeholder="$t('Contactme.email')" class="input-box" type="email" name="email">
+        <input v-model="email" :placeholder="$t('Contactme.email')" class="input-box" type="email" name="email">
       </div>
       <div class="container-flex">
-        <input :placeholder="$t('Contactme.name')" class="input-box" type="text" name="name">
+        <input v-model="name" :placeholder="$t('Contactme.name')" class="input-box" type="text" name="name">
       </div>	  
       <div class="container-flex">
-        <input :placeholder="$t('Contactme.phone')" class="input-box" type="text" name="phone">
+        <input v-model="phone" :placeholder="$t('Contactme.phone')" class="input-box" type="text" name="phone">
       </div>
       <div class="container-flex">
-        <input :placeholder="$t('Contactme.note')" class="input-box" type="text" name="subject">        
+        <input v-model="note" :placeholder="$t('Contactme.note')" class="input-box" type="text" name="subject">        
       </div>
             <div class="container-flex">
-      <button class="btn" >{{ $t("Contactme.send") }}</button>
+      <button class="btn" @click="sendEmail">{{ $t("Contactme.send") }}</button>
       </div>
   </div>
 </template>
 
 <script>
+import { prototype } from 'events';
 export default {
-  name: "TheContactUsForm"
+  name: "TheContactUsForm",
+  data:function(){
+    return{
+      email:'',
+      name:'',
+      phone:'',
+      note:''
+    }
+  },
+  methods:{
+    sendEmail: function(){
+      var parameters = {email:this.email, name:this.name, phone:this.phone, note:this.note};
+      $.get('/contactme',parameters, function(){
+      });
+    }
+  }
 };
 </script>
 
