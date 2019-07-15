@@ -76,7 +76,7 @@ export default {
         this.checkWhichLanguage(localStorage.language);
         this.$i18n.locale = localStorage.language;
       }else
-        checkWhichLanguage('es');     
+        this.checkWhichLanguage('es');     
     }
   };
 $(document).ready(function() {
