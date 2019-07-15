@@ -111,13 +111,14 @@ $(document).ready(function() {
         // $("#sidebar-contactme").css("text-decoration", "none");
       }
       if ($(this).scrollTop() >= 1600 && $(this).scrollTop() <= 2700) {
-        if($(".side-bar").is(":hidden"))
-          $(".side-bar").slideDown();         
-        $("#sidebar-projects").css("text-decoration", "none");
-        $("#sidebar-about").css("text-decoration", "none");
-        $("#sidebar-experience").css("text-decoration", "none");
-        $("#sidebar-technologies").css("text-decoration", "underline");
-        $("#sidebar-contactme").css("text-decoration", "none");
+        $(".side-bar").slideUp()
+        // if($(".side-bar").is(":hidden"))
+        //   $(".side-bar").slideDown();         
+        // $("#sidebar-projects").css("text-decoration", "none");
+        // $("#sidebar-about").css("text-decoration", "none");
+        // $("#sidebar-experience").css("text-decoration", "none");
+        // $("#sidebar-technologies").css("text-decoration", "underline");
+        // $("#sidebar-contactme").css("text-decoration", "none");
       }
       if ($(this).scrollTop() >= 2700) {
         if($(".side-bar").is(":hidden"))
