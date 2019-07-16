@@ -21,7 +21,7 @@
       <div class="modal">
         <div class="modal-content">
           <h2>{{ $t("Contactme.messageSent") }}</h2>
-          <a class="close btn" @click="close">
+          <a class="close btn" @click="closeModal">
             {{ $t("Contactme.great") }}
           </a>
         </div>
@@ -53,7 +53,15 @@ export default {
       $.get('/contactme',parameters, function(){
       }).fail(function(){
       });
-      if(this.email !== '' && this.name !== '' && this.phone !== ''  )
+      this.showOptionalFieldMessage(this.email, this.name, this.phone)
+    },
+    closeModal: function(){
+      $('.close').click(function(){
+        $('.modal').css('display','none');
+      });      
+    },
+    showOptionalFieldMessage: function(email, name, phone){
+      if(email !== '' && name !== '' && phone !== ''  )
       {
         this.email = '';
         this.name = '';
@@ -64,11 +72,6 @@ export default {
       }else{
         $('.required-fields').css('display', 'inline');
       }
-    },
-    close: function(){
-      $('.close').click(function(){
-        $('.modal').css('display','none');
-      });      
     }
   }
 };
