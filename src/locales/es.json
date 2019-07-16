@@ -23,6 +23,9 @@
     "name":"Nombre",
     "phone":"Numero de telefono",
     "note":"Nota (opcional)",
-    "send":"Enviar"
+    "send":"Enviar",
+    "messageSent":"Gracias, estare comunicandome con usted en breve!",
+    "great":"perfecto",
+    "requiredFields": "Por favor entre información en todos los campos requeridos"     
   }
 }

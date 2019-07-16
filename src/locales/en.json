@@ -23,7 +23,10 @@
     "name":"Name",
     "phone":"Phone number",
     "note":"Note (optional)",
-    "send":"Send"
+    "send":"Send",
+    "messageSent":"Thank you for communicating with me, i'll be contacting you soon!",
+    "great":"perfect",
+    "requiredFields": "Please enter information on all required fields"
  }
 }
   

@@ -25,15 +25,15 @@ app.get('/contactme',(parameters) => {
 		'<p>Email: ' + parameters.query.email + '</p> ' + ' <p>Telefono: ' +
 		parameters.query.phone + ' </p> ' + ' <p>Nota: ' + parameters.query.note + '</p>'
 	};	
-	transporter.sendMail(mailOptions, function(error, response){
-		if(error){
-			console.log(error);
-		}else{
-			console.log("Message sent: " + response.message);
-		}
-		transporter.close(); 
-	});	
-})
+	// transporter.sendMail(mailOptions, function(error, response){
+	// 	if(error){
+	// 		console.log(error);
+	// 	}else{
+	// 		console.log("Message sent: " + response.message);
+	// 	}
+	// 	transporter.close(); 
+	// });	
+});
 
 app.use('/', serverStatic(path.join(__dirname, '/dist')));
 
