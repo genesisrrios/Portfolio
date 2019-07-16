@@ -1,5 +1,8 @@
 <template>
   <div class="container">
+    <div class="row"  style="justify-content: center;">
+    <h1 class="header">{{ $t("Projects.tittle") }}</h1>
+    </div>    
     <div class="row">
       <div class="box box-text">
         <div class="box-content">
@@ -57,8 +60,12 @@ h1 {
   justify-content: center;
   margin: 45px;
 }
+.header{
+  text-align: center;
+}
 h2 {
   font-family: "Baskerville";
   color: #383030;
 }
+
 </style>

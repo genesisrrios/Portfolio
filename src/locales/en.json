@@ -27,6 +27,12 @@
     "messageSent":"Thank you for communicating with me, i'll be contacting you soon!",
     "great":"perfect",
     "requiredFields": "Please enter information on all required fields"
+ },
+ "Technologies":{
+    "tittle" : "Technologies"
+ },
+ "Projects":{
+    "tittle":"Projects"
  }
 }
   

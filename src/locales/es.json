@@ -27,5 +27,11 @@
     "messageSent":"Gracias, estare comunicandome con usted en breve!",
     "great":"perfecto",
     "requiredFields": "Por favor entre información en todos los campos requeridos"     
-  }
+  },
+  "Technologies":{
+    "tittle" : "Tecnologias"
+ },
+ "Projects":{
+  "tittle":"Proyectos"
+} 
 }
