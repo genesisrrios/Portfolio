@@ -19,14 +19,15 @@ export default {
 .container {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height:75vh;   
+    justify-content: top;
+    height:100vh;   
 }
 .main-text {
-    width: 50%;
-    text-align: center;
-    color: #383030;
+  padding-top: 75px;
+  width: 50%;
+  text-align: center;
+  font-weight:bold
 }
 </style>

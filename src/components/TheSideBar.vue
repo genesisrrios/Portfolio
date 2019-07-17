@@ -92,25 +92,13 @@ $(document).ready(function() {
         $("#sidebar-technologies").css("text-decoration", "none");
         $("#sidebar-contactme").css("text-decoration", "none");
       }
-      if ($(this).scrollTop() >= 1000 && $(this).scrollTop() <= 1600) {
+      if ($(this).scrollTop() >= 1500 && $(this).scrollTop() <= 2000) {
         $(".side-bar").slideUp()
-        // $("#sidebar-projects").css("text-decoration", "underline");
-        // $("#sidebar-about").css("text-decoration", "none");
-        // $("#sidebar-experience").css("text-decoration", "none");
-        // $("#sidebar-technologies").css("text-decoration", "none");
-        // $("#sidebar-contactme").css("text-decoration", "none");
       }
       if ($(this).scrollTop() >= 1600 && $(this).scrollTop() <= 2700) {
         $(".side-bar").slideUp()
-        // if($(".side-bar").is(":hidden"))
-        //   $(".side-bar").slideDown();         
-        // $("#sidebar-projects").css("text-decoration", "none");
-        // $("#sidebar-about").css("text-decoration", "none");
-        // $("#sidebar-experience").css("text-decoration", "none");
-        // $("#sidebar-technologies").css("text-decoration", "underline");
-        // $("#sidebar-contactme").css("text-decoration", "none");
       }
-      if ($(this).scrollTop() >= 2700) {
+      if ($(this).scrollTop() >= 4000) {
         if($(".side-bar").is(":hidden"))
           $(".side-bar").slideDown();         
 

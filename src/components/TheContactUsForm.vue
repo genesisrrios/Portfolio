@@ -1,32 +1,47 @@
 <template>
   <div class="container">
-<div class="container-flex spacing"></div>
-      <div class="container-flex">
-        <input v-model="email" :placeholder="$t('Contactme.email')" class="input-box" type="email" name="email">
+<div class="container-flex-row spacing"></div>
+<div class="container-flex-row">
+  <div class="container-flew-row" style="padding:60px;">
+    <h1>{{$t('Contactme.talkToMe1')}}</h1>
+    <h1>{{$t('Contactme.talkToMe2')}}</h1>
+    <h1>{{$t('Contactme.talkToMe3')}}</h1>
+    </div>
+    <div class="container-flex-column position-flex-center">
+      <div class="container-flex-row position-flex-center" >
+        <input v-model="email" :placeholder="$t('Contactme.email')" required class="input-box" type="email" name="email">
       </div>
-      <div class="container-flex">
-        <input v-model="name" :placeholder="$t('Contactme.name')" class="input-box" type="text" name="name">
+      <div class="container-flex-row position-flex-center">
+        <input v-model="name" :placeholder="$t('Contactme.name')" required class="input-box" type="text" name="name">
       </div>	  
-      <div class="container-flex">
-        <input v-model="phone" :placeholder="$t('Contactme.phone')" class="input-box" type="text" name="phone">
+      <div class="container-flex-row position-flex-center">
+        <input v-model="phone" :placeholder="$t('Contactme.phone')" required class="input-box" type="text" name="phone">
       </div>
-      <div class="container-flex">
+      <div class="container-flex-row position-flex-center" >
         <input v-model="note" :placeholder="$t('Contactme.note')" class="input-box" type="text" name="subject">        
       </div>
-      <div class="container-flex required-fields">
-      <h2>{{ $t("Contactme.requiredFields") }}</h2>
+      <div class="container-flex-row position-flex-center">
+      <h2 class="required-fields" >{{ $t("Contactme.requiredFields") }}</h2>
       </div>      
-            <div class="container-flex">
+            <div class="container-flex-row position-flex-center ">
       <button class="btn" @click="sendEmail">{{ $t("Contactme.send") }}</button>
       </div>
       <div class="modal">
         <div class="modal-content">
-          <h2>{{ $t("Contactme.messageSent") }}</h2>
-          <a class="close btn" @click="closeModal">
-            {{ $t("Contactme.great") }}
+          <h1>{{ $t("Contactme.messageSent") }}</h1>
+          <h2>{{ $t("Contactme.aboutQuestions") }}</h2>
+          <h3>{{ $t("Contactme.question1") }}</h3>
+          <h3>{{ $t("Contactme.question2") }}</h3>          
+          <h3>{{ $t("Contactme.question3") }}</h3>    
+          <div cla>
+          <a  class="btn container-flex-row position-flex-center " @click="closeModal">
+            {{ $t("Contactme.great") }}!
           </a>
+          </div>
         </div>
       </div>
+    </div>
+  </div>
   </div>
 </template>
 
@@ -57,9 +72,7 @@ export default {
       this.showOptionalFieldMessage(this.email, this.name, this.phone)
     },
     closeModal: function(){
-      $('.close').click(function(){
-        $('.modal').css('display','none');
-      });      
+      $('.modal').css('display','none');
     },
     showOptionalFieldMessage: function(email, name, phone){
       if(email !== '' && name !== '' && phone !== ''  )
@@ -68,7 +81,7 @@ export default {
         this.name = '';
         this.phone = '';
         this.note = '';
-      $('.required-fields').css('display', 'none');
+      $('.required-fields').css('display', 'hidden');
       $('.modal').css('display','inline');
       }else{
         $('.required-fields').css('display', 'inline');
@@ -79,22 +92,39 @@ export default {
 </script>
 
 <style scoped>
+
 .container {
   width: 100%;
   height: 100vh;
   padding-top: 50px;
+  background-color: #e0ebe8;
 }
-.container-flex{
+.container-flex-row{
   display: flex;
   flex-direction: row;
+}
+.required-fields{
+  font-size: 90%;
+  color:red;
+  display: none;
+}
+.container-flex-column{
+  display: flex;
+  flex-direction: column;	  
+}
+.position-flex-left{
+  align-items: left;
+  justify-content: left;
+  width:30%;
+}
+.position-flex-center{
   align-items: center;
-  justify-content: center;	
+  justify-content: center;
 }
 .input-box{
-    width: 30%;
+    width: 300px;
     background-color: white;
     border-radius: 25px;
-    justify-content: left;
     padding: 20px 30px;
     margin: 8px 0;
     display: inline-block;
@@ -106,6 +136,7 @@ export default {
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 10px;  
+  background-color: white;
 }
 .btn:hover{
   cursor: pointer;
@@ -122,15 +153,16 @@ export default {
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.4);   
 }
+
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
   border-radius: 10px;  
   border: 1px solid #888;
+  text-align: center;
   width: 80%; 
 }
-/* The Close Button */
 .close {
   margin-left: 50%;
   color: #aaa;
@@ -146,14 +178,5 @@ h2{
   text-decoration: none;
   cursor: pointer;
 }
-.required-fields{
-  display: none;
-}
-.required-fields{
-  display:hidden;
-  color:red;
-}
-.spacing{
-  padding-top: 200px;
-}
+
 </style>

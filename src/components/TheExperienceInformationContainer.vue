@@ -8,6 +8,8 @@
           <h2>{{ $t("Experience.second") }}</h2>
           <h2>{{ $t("Experience.third") }}</h2>
           <h2>{{ $t("Experience.fourth") }} <span class="tool-tip">{{ $t("Experience.fifth") }}<span class="tool-tip-text">{{ $t("Experience.sixth") }}</span></span> {{ $t("Experience.seventh") }}</h2>
+          <h1>-2015</h1>
+          <h2>{{ $t("Experience.eight") }}</h2>
            </div>
       </div>
     </div> 
@@ -28,12 +30,11 @@ export default {
     align-items: center;
     justify-content: center;
     height:100vh;   
-}
+    background: linear-gradient(to right bottom, #71e2a6 50%,white 50%);}
 .box-content{
     padding:10px;
 }
 h1{
-    font-family: 'Baskerville';
     font-size: 45px;
 }
 .box{
@@ -42,9 +43,6 @@ h1{
     border-radius: 25px;
     justify-content: center;
     margin:45px;
-}
-h2{
-    font-family: 'Baskerville';
 }
 .tool-tip{
     cursor: pointer;

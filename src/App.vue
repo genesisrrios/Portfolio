@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <TheSideBar />
-    <TheMainText id="about"/>
-    <TheExperienceInformationContainer id="experience"/>
+    <TheMainText id="about"/>    
+    <TheExperienceInformationContainer id="experience" />
     <TheProjectsContainer id="projects"/>
-    <TheTechnologiesContainer id="technologies"/>    
+    <TheTechnologiesContainer id="technologies"/> 
     <TheContactUsForm id="contactme"/>
     </div>
 </template>
@@ -34,11 +34,28 @@ export default {
 };
 </script>
 <style>
-body {
-    background:#e3dac9;
-}
 html {
     scroll-behavior: smooth;
 }
+body{
+}
+h1{
+    font-family: 'Sansita', sans-serif;
+}
 
+h2{
+  font-family: 'Open Sans', sans-serif;
+}
+h3{
+  font-family: 'Open Sans', sans-serif;
+}
+a{
+  font-family: 'Open Sans', sans-serif;
+}
+button {
+  font-family: 'Open Sans', sans-serif;
+}
+.spacing{
+  padding-top: 200px;
+}
 </style>

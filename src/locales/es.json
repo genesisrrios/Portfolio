@@ -16,7 +16,8 @@
     "fourth":"Gane un ",
     "fifth":"Hackaton",
     "sixth":"Es una maratón de desarrollo web; un encuentro de programadores cuyo objetivo es el desarrollo colaborativo de software. Los participantes se organizan en grupos y cada uno tiene proyectos y retos que conseguir.",
-    "seventh":"en el cual junto a un grupo de desarrolladores creamos una pagina web la cual seria utilizada como plataforma de educación para estudiantes puertorriqueños."
+    "seventh":"en el cual junto a un grupo de desarrolladores creamos una pagina web la cual seria utilizada como plataforma de educación para estudiantes puertorriqueños.",
+    "eight":"Complete un curso tecnico enfocado en sistemas de informacion y redes."
   },
   "Contactme":{
     "email":"Correo electronico",
@@ -27,10 +28,16 @@
     "messageSent":"Gracias, estare comunicandome con usted en breve!",
     "great":"perfecto",
     "requiredFields": "Por favor entre información en todos los campos requeridos",
-    "talkToMe":"No dude en hablar conmigo, siempre estoy abierta a discutir ideas de proyectos!."
+    "talkToMe1":"No dude en hablar conmigo,",
+    "talkToMe2":" siempre estoy abierta a discutir ideas",    
+    "talkToMe3":"para nuevos proyectos!",
+    "aboutQuestions":"Algunas de las preguntas que le voy a hacer son:",
+    "question1":"¿Para qué tipo de negocio es el sitio web?",
+    "question2":"Cualquier requisito especial que pueda tener.",
+    "question3":"¿Alguna fecha límite específica?"    
   },
   "Technologies":{
-    "tittle" : "Tecnologias"
+    "tittle" : "Tecnologias y habilidades"
  },
  "Projects":{
   "tittle":"Proyectos"

@@ -1,28 +1,24 @@
 <template>
-  <div class="container">
+  <div class="container spacing">
     <div class="row"  style="justify-content: center;">
     <h1 class="header">{{ $t("Projects.tittle") }}</h1>
     </div>    
     <div class="row">
-      <div class="box box-text">
-        <div class="box-content">
-        </div>
-      </div>
-      <div class="box box-text">
+      <div class="box">
         <div class="box-content"></div>
       </div>
-      <div class="box box-text">
+      <div class="box">
         <div class="box-content"></div>
       </div>
     </div>
     <div class="row">
-      <div class="box box-text">
+      <div class="box">
         <div class="box-content"></div>
       </div>
-      <div class="box box-text">
+      <div class="box">
         <div class="box-content"></div>
       </div>
-      <div class="box box-text">
+      <div class="box">
         <div class="box-content"></div>
       </div>
     </div>
@@ -38,7 +34,8 @@ export default {
 <style scoped>
 .container {
   width: 100%;
-  height: 100vh;
+  height: 120vh;
+  background: linear-gradient(to right bottom,  white 50%, #e2728d 50%);
 }
 .row {
   display: flex;
@@ -48,7 +45,6 @@ export default {
   padding: 10px;
 }
 h1 {
-  font-family: "Baskerville";
   font-size: 45px;
   color: #383030;
 }
@@ -56,7 +52,6 @@ h1 {
   height: 100%;
   width: 55%;
   background-color: white;
-  border-radius: 25px;
   justify-content: center;
   margin: 45px;
 }
@@ -64,8 +59,9 @@ h1 {
   text-align: center;
 }
 h2 {
-  font-family: "Baskerville";
   color: #383030;
 }
-
+.image{
+  height:300px;
+}
 </style>
