@@ -26,7 +26,8 @@
     "send":"Enviar",
     "messageSent":"Gracias, estare comunicandome con usted en breve!",
     "great":"perfecto",
-    "requiredFields": "Por favor entre información en todos los campos requeridos"     
+    "requiredFields": "Por favor entre información en todos los campos requeridos",
+    "talkToMe":"No dude en hablar conmigo, siempre estoy abierta a discutir ideas de proyectos!."
   },
   "Technologies":{
     "tittle" : "Tecnologias"

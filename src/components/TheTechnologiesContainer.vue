@@ -22,13 +22,19 @@
     </div>
     <div class="row">
       <div class="box">
-        <div class="box-content"></div>
+        <div class="box-content">
+            <img  src="../assets/C_sharp.svg" alt="C# Logo">
+        </div>
       </div>
       <div class="box">
-        <div class="box-content"></div>
+        <div class="box-content">
+          <img src="../assets/CSS3_and_HTML5_.svg" alt="Css and HTML Logo">          
+        </div>
       </div>
       <div class="box">
-        <div class="box-content"></div>
+        <div class="box-content">
+           <img src="../assets/WordPress.svg" alt="Css and HTML Logo">           
+        </div>
       </div>
     </div>
   </div>

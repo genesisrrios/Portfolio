@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+<div class="container-flex spacing"></div>
       <div class="container-flex">
         <input v-model="email" :placeholder="$t('Contactme.email')" class="input-box" type="email" name="email">
       </div>
@@ -151,5 +152,8 @@ h2{
 .required-fields{
   display:hidden;
   color:red;
+}
+.spacing{
+  padding-top: 200px;
 }
 </style>

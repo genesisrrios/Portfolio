@@ -26,7 +26,8 @@
     "send":"Send",
     "messageSent":"Thank you for communicating with me, i'll be contacting you soon!",
     "great":"perfect",
-    "requiredFields": "Please enter information on all required fields"
+    "requiredFields": "Please enter information on all required fields",
+    "talkToMe": "Feel free to talk to me, i am always open to discussing project ideas!"
  },
  "Technologies":{
     "tittle" : "Technologies"
