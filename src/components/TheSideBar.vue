@@ -130,6 +130,7 @@ $(document).ready(function() {
   display: flex;
   flex-direction: column;
   list-style-type: none;
+  top:2;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -138,9 +139,9 @@ $(document).ready(function() {
 }
 
 .list-right a {
-  padding-top: 45px;
+  padding-top: 15px;
   font-size: 25px;
-  color: #383030;
+
   transition: 0.3s;
   display: inline-block;
   right: 0;
@@ -148,7 +149,9 @@ $(document).ready(function() {
   padding-left: 20px;
   padding-right: 20px;
 }
-
+a{
+  color: #383030;
+}
 .list-right:hover a {
   color: #383030;
   cursor: pointer;

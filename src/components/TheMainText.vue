@@ -22,7 +22,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: top;
-    height:100vh;   
+    height:80vh;   
 }
 .main-text {
   padding-top: 75px;

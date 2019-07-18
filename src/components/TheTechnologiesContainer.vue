@@ -36,14 +36,12 @@
            <img src="../assets/WordPress.svg" alt="Css and HTML Logo">           
         </div>
       </div>    
-    </div>
-  <div class="row">
             <div class="box" >
         <div class="box-content" > 
            <img src="../assets/Vue.js_Logo.svg" alt="Vue js Logo">           
         </div>
         </div>
-      </div>      
+    </div>
   </div>
 </template>
 
@@ -57,7 +55,6 @@ export default {
 .container {
   width: 100%;
   height: 150vh;
-  background: linear-gradient(to right bottom,  #e0ebe8 50%, white 50%);
 }
 .row {
   display: flex;

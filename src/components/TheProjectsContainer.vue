@@ -35,7 +35,6 @@ export default {
 .container {
   width: 100%;
   height: 120vh;
-  background: linear-gradient(to right bottom,  white 50%, #e2728d 50%);
 }
 .row {
   display: flex;

@@ -97,7 +97,6 @@ export default {
   width: 100%;
   height: 100vh;
   padding-top: 50px;
-  background-color: #e0ebe8;
 }
 .container-flex-row{
   display: flex;
