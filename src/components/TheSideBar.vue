@@ -3,10 +3,13 @@
     <ul class="top-bar-logo">
       <li style="flex: 2 0 0;">
         <a>
-           <img src="../assets/name-logo.svg" alt="My Awesome SVG">
+           <img src="../assets/name-logo.svg" alt="Name of the author of the profile">
         </a>
         <ul>
-          <li class="language-list"><svg data-v-abbad38a="" id="Capa_1" x="0px" y="0px" sodipodi:docname="switch-keyboard-language-svgrepo-com.svg" width="50" height="50" viewBox="3 1 8 9"><g data-v-abbad38a="" id="g73" transform="matrix(0.42074593,0,0,0.40584991,2.0690724,2.6158722)" inkscape:transform-center-x="-11.843655" inkscape:transform-center-y="0.14269464"><g data-v-abbad38a="" id="g71"><g data-v-abbad38a="" id="g69"><path data-v-abbad38a="" d="M 5.734,8.248 V 7.617 C 5.382,7.377 5.049,7.092 4.742,6.754 3.853,7.613 3.002,8.157 2.906,8.218 L 2.825,8.268 2.335,7.485 2.415,7.434 C 2.425,7.427 3.291,6.878 4.166,6.021 3.363,4.85 3.054,3.67 3.042,3.619 L 3.019,3.529 3.914,3.299 3.936,3.39 C 3.938,3.4 4.193,4.344 4.813,5.316 5.426,4.571 5.783,3.853 5.874,3.176 H 2.115 V 2.171 H 4.187 V 1.612 H 5.153 V 2.17 H 7.225 V 3.176 H 6.808 C 6.711,4.117 6.233,5.092 5.384,6.077 5.498,6.205 5.615,6.322 5.734,6.434 V 6.369 5.961 c 0,-0.336 0.272,-0.608 0.608,-0.608 H 9.047 V 0.569 C 9.047,0.485 8.98,0.417 8.895,0.417 H 0.152 C 0.068,0.417 0,0.485 0,0.569 v 8.742 c 0,0.085 0.068,0.152 0.152,0.152 h 5.582 z" id="path61" inkscape:connector-curvature="0" style="fill: rgb(9, 5, 9);"></path><path data-v-abbad38a="" d="M 10.728,8.515 H 10.711 C 10.627,8.848 10.545,9.27 10.453,9.593 l -0.332,1.187 h 1.236 L 11.01,9.593 C 10.91,9.261 10.81,8.847 10.728,8.515 Z" id="path63" inkscape:connector-curvature="0" style="fill: rgb(9, 5, 9);"></path><path data-v-abbad38a="" d="M 15.152,5.841 H 6.41 c -0.084,0 -0.152,0.068 -0.152,0.152 v 8.743 c 0,0.084 0.068,0.151 0.152,0.151 h 8.742 c 0.085,0 0.152,-0.067 0.152,-0.151 V 5.993 c 0,-0.083 -0.067,-0.152 -0.152,-0.152 z m -3.18,7.319 -0.431,-1.436 H 9.94 L 9.541,13.16 H 8.231 L 9.94,7.57 h 1.658 l 1.733,5.59 z" id="path65" inkscape:connector-curvature="0" style="fill: rgb(9, 5, 9);"></path><polygon data-v-abbad38a="" points="5.986,11.647 3.935,11.647 3.935,9.846 2.72,9.846 2.72,11.866 3.726,12.862 5.986,12.862 " id="polygon67" style="fill: rgb(9, 5, 9);"></polygon></g></g></g><g data-v-abbad38a="" id="g75" transform="translate(0,-3.304)"></g><g data-v-abbad38a="" id="g77" transform="translate(0,-3.304)"></g><g data-v-abbad38a="" id="g79" transform="translate(0,-3.304)"></g><g data-v-abbad38a="" id="g81" transform="translate(0,-3.304)"></g><g data-v-abbad38a="" id="g83" transform="translate(0,-3.304)"></g><g data-v-abbad38a="" id="g85" transform="translate(0,-3.304)"></g><g data-v-abbad38a="" id="g87" transform="translate(0,-3.304)"></g><g data-v-abbad38a="" id="g89" transform="translate(0,-3.304)"></g><g data-v-abbad38a="" id="g91" transform="translate(0,-3.304)"></g><g data-v-abbad38a="" id="g93" transform="translate(0,-3.304)"></g><g data-v-abbad38a="" id="g95" transform="translate(0,-3.304)"></g><g data-v-abbad38a="" id="g97" transform="translate(0,-3.304)"></g><g data-v-abbad38a="" id="g99" transform="translate(0,-3.304)"></g><g data-v-abbad38a="" id="g101" transform="translate(0,-3.304)"></g><g data-v-abbad38a="" id="g103" transform="translate(0,-3.304)"></g></svg>
+          <li class="language-list">
+            <a>
+              <img src="../assets/global.svg" alt="Languages icon">
+            </a>
           </li>
             <a @click="setLocale('es')" id="language-es" style="cursor:pointer;margin:15px;">es</a>
             <a @click="setLocale('en')" id="language-en" style="cursor:pointer;">en</a>
@@ -45,11 +48,11 @@ export default {
     checkWhichLanguage(language){
       switch(language){
           case "es":          
-            $("#language-es").css("color","red");
+            $("#language-es").css("color","white");
             $("#language-en").css("color","black");
             break;
           case "en":
-            $("#language-en").css("color","red");  
+            $("#language-en").css("color","white");  
             $("#language-es").css("color","black");                  
             break;  
         }
@@ -122,11 +125,16 @@ $(document).ready(function() {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background-color: #cc5577;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23cc5577' width='11' height='11'/%3E%3Crect fill='%23cd5776' x='10' width='11' height='11'/%3E%3Crect fill='%23ce5975' y='10' width='11' height='11'/%3E%3Crect fill='%23cf5b74' x='20' width='11' height='11'/%3E%3Crect fill='%23d05d72' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23d15f71' y='20' width='11' height='11'/%3E%3Crect fill='%23d26170' x='30' width='11' height='11'/%3E%3Crect fill='%23d36370' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23d4666f' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23d4686e' y='30' width='11' height='11'/%3E%3Crect fill='%23d56a6d' x='40' width='11' height='11'/%3E%3Crect fill='%23d56c6c' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23d66e6c' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23d6716b' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23d7736b' y='40' width='11' height='11'/%3E%3Crect fill='%23d7756a' x='50' width='11' height='11'/%3E%3Crect fill='%23d7776a' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%23d8796a' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23d87c6a' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23d87e6a' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23d8806a' y='50' width='11' height='11'/%3E%3Crect fill='%23d8826a' x='60' width='11' height='11'/%3E%3Crect fill='%23d8856a' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23d8876a' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23d8896a' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23d88b6a' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23d88d6b' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23d8906b' x='70' width='11' height='11'/%3E%3Crect fill='%23d7926c' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23d7946d' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23d7966d' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23d7986e' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23d69a6f' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23d69d70' x='80' width='11' height='11'/%3E%3Crect fill='%23d69f71' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23d6a172' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23d5a374' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23d5a575' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23d5a776' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23d4a978' x='90' width='11' height='11'/%3E%3Crect fill='%23d4ab79' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23d3ad7b' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23d3af7d' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23d3b17e' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23d2b380' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23d2b582' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23d2b784' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23d1b986' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23d1bb88' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23d1bd8a' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23d1bf8c' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23d0c18f' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23d0c291' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23d0c493' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23d0c696' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23cfc898' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23cfca9a' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23cfcc9d' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23cfcd9f' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23cfcfa2' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
 }
 .hide{
   visibility: hidden;
 }
 .side-bar {
+  
   display: flex;
   flex-direction: column;
   list-style-type: none;
@@ -141,19 +149,22 @@ $(document).ready(function() {
 .list-right a {
   padding-top: 15px;
   font-size: 25px;
-
+  color:white;
   transition: 0.3s;
   display: inline-block;
   right: 0;
   margin-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
+  text-shadow: #343a40 2px 2px;
+
 }
-a{
-  color: #383030;
+
+#language-es{
+  color: #fff;
 }
 .list-right:hover a {
-  color: #383030;
+  color: black;
   cursor: pointer;
 }
 .language-list {
