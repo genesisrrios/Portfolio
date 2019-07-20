@@ -2,8 +2,11 @@
   <div>
     <ul class="top-bar-logo">
       <li style="flex: 2 0 0;">
-        <a>
-           <img src="../assets/name-logo.svg" alt="Name of the author of the profile">
+        <a v-if="language_english">
+           <img  src="../assets/name-logo-english.svg" alt="Name of the author of the profile">
+        </a>
+        <a v-else>
+          <img  src="../assets/name-logo-spanish.svg" alt="Name of the author of the profile">
         </a>
         <ul>
           <li class="language-list">
@@ -44,16 +47,23 @@ export default {
   name: "TheSideBar",
   props: {
   },
+  data() {
+    return {
+      language_english:false
+    }
+  },  
   methods:{
     checkWhichLanguage(language){
       switch(language){
           case "es":          
             $("#language-es").css("color","white");
             $("#language-en").css("color","black");
+            this.language_english = false;
             break;
           case "en":
             $("#language-en").css("color","white");  
             $("#language-es").css("color","black");                  
+            this.language_english = true;
             break;  
         }
     },    
@@ -68,9 +78,10 @@ export default {
       {
         this.checkWhichLanguage(localStorage.language);
         this.$i18n.locale = localStorage.language;
+
       }else
         this.checkWhichLanguage('es');     
-    }
+    },
   };
 $(document).ready(function() {
   $(function() {

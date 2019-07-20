@@ -14,7 +14,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="name-logo.svg">
+   sodipodi:docname="name-logo-english.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="400"
-     inkscape:cy="560"
+     inkscape:zoom="3.959798"
+     inkscape:cx="166.2161"
+     inkscape:cy="-8.2443313"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -63,5 +63,27 @@
          x="22.67857"
          y="259.20236"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:50.79999924px;font-family:'Freestyle Script';-inkscape-font-specification:'Freestyle Script';stroke-width:0.26458332">Genesis Rivera Rios</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:48px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.20000005"
+       x="105.76298"
+       y="286.99896"
+       id="text26"><tspan
+         sodipodi:role="line"
+         id="tspan24"
+         x="105.76298"
+         y="330.79083"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:25.60000038px;font-family:'Freestyle Script';-inkscape-font-specification:'Freestyle Script';fill:#ffffff;stroke-width:1.20000005" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:48px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.20000005"
+       x="58.487835"
+       y="282.75635"
+       id="text30"><tspan
+         sodipodi:role="line"
+         id="tspan28"
+         x="58.487835"
+         y="282.75635"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;font-family:Cambria;-inkscape-font-specification:Cambria;fill:#f9f9f9;stroke-width:1.20000005">Web developer &amp; designer</tspan></text>
   </g>
 </svg>
