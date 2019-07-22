@@ -56,13 +56,13 @@ export default {
     checkWhichLanguage(language){
       switch(language){
           case "es":          
-            $("#language-es").css("color","#FF0000");
-            $("#language-en").css("color","black");
+            $("#language-es").css("color","#d71e18");
+            $("#language-en").css("color","white");
             this.language_english = false;
             break;
           case "en":
-            $("#language-en").css("color","#FF0000");  
-            $("#language-es").css("color","black");                  
+            $("#language-en").css("color","#d71e18");  
+            $("#language-es").css("color","white");                  
             this.language_english = true;
             break;  
         }
