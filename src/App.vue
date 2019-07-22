@@ -6,6 +6,7 @@
     <TheProjectsContainer id="projects"/>
     <TheTechnologiesContainer id="technologies"/> 
     <TheContactUsForm id="contactme"/>
+    <TheFooterContainer/>
     </div>
 </template>
 
@@ -15,7 +16,8 @@ import TheExperienceInformationContainer from "./components/TheExperienceInforma
 import TheMainText from "./components/TheMainText";
 import TheProjectsContainer from "./components/TheProjectsContainer";
 import TheContactUsForm from "./components/TheContactUsForm";
-import TheTechnologiesContainer from "./components/TheTechnologiesContainer"
+import TheTechnologiesContainer from "./components/TheTechnologiesContainer";
+import TheFooterContainer from "./components/TheFooterContainer"
 
 export default {
   name: "app",
@@ -25,7 +27,8 @@ export default {
     TheMainText,
     TheProjectsContainer,
     TheContactUsForm,
-    TheTechnologiesContainer
+    TheTechnologiesContainer,
+    TheFooterContainer
      },
   mounted() {
 
@@ -37,7 +40,8 @@ export default {
 html {
     scroll-behavior: smooth;
 }
-body{
+body {
+  background-color: #ddb48d;
 }
 h1{
     font-family: 'Sansita', sans-serif;
