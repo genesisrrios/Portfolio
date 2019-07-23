@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="row" style="justify-content: center;">  
+    <!-- <div class="row" style="justify-content: center;">  
     <h1 class="header" >{{ $t("Technologies.tittle") }}</h1>
     </div>
     <div class="row">
@@ -41,7 +41,7 @@
            <img src="../assets/Vue.js_Logo.svg" alt="Vue js Logo">           
         </div>
         </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

@@ -1,10 +1,10 @@
 <template>
   <div id="app">
-      <div class="container">
+      <!-- <div class="container">
         <div class="main-text">
            <h1 >{{ $t("MainText.introduction") }}</h1>
         </div>
-      </div>
+      </div> -->
     </div>
 </template>
 
@@ -24,7 +24,7 @@ export default {
     align-items: center;
     justify-content: top;
     height:100vh;  
-    background-image: url("../assets/laptop.svg");
+    background-image: url("../assets/main-text-laptop.svg");
     background-repeat: no-repeat;
     background-position: center center;    
     background-size: 500px 500px;    
@@ -47,7 +47,7 @@ export default {
     align-items: center;
     justify-content: top;
     height:100vh;  
-    background-image: url("../assets/laptop.svg");
+    background-image: url("../assets/main-text-laptop.svg");
     background-repeat: no-repeat;
     background-position: center center;    
     background-size: 300px 300px;    

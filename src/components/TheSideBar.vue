@@ -1,15 +1,9 @@
 <template>
   <div>
-    <div class="top-bar-logo">
-      <div class="flex-desktop-side">
-          <img v-if="language_english"  src="../assets/name-logo-english.svg" alt="Name of the author of the profile">
-          <img v-else  src="../assets/name-logo-spanish.svg" alt="Name of the author of the profile">
-          <div class="language-list">
-            <img class="language-icon" src="../assets/global.svg" alt="Languages icon" align="bottom">
-            <a @click="setLocale('es')" id="language-es" style="cursor:pointer;margin:15px;">es</a>
-            <a @click="setLocale('en')" id="language-en" style="cursor:pointer;">en</a>
-          </div>
-      </div>
+      <header>
+    <div class="logo-container">
+          <img class="name-logo" v-if="language_english"  src="../assets/name-logo-english.svg" alt="Name of the author of the portoflio">
+          <img class="name-logo" v-else  src="../assets/name-logo-spanish.svg" alt="Name of the author of the profile">        
     </div>
     <ul class="side-bar">
       <li class="list-right">
@@ -28,6 +22,7 @@
         <a id="sidebar-contactme" href="#contactme" style="text-decoration:none;">{{$t("SideBar.contactme")}}</a>
       </li>
     </ul>
+    </header>
   </div>
 </template>
 
@@ -121,24 +116,12 @@ $(document).ready(function() {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-@media only screen and (min-width:400px) and (max-width: 1700px){
-
-.top-bar-logo {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-.hide{
-  visibility: hidden;
-}
+/* Styling for the Sidebar */
 .side-bar {
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  top:2;
+  top:1;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -159,75 +142,16 @@ $(document).ready(function() {
   text-shadow: #343a40 2px 2px;
 
 }
-
-#language-es,#language-en{
-  cursor:pointer;
-}
-.language-icon{
-  padding-bottom:-20px;
-}
 .list-right:hover a {
   color: #9db6c9;
   cursor: pointer;
 }
-.language-list {
-  left:0;
-  padding-left: 30px;
-}
-.fex-desktop-side{
-  flex: 2 0 0;
-}
-}
-@media only screen and (max-width: 667px) and (min-width: 375px) {
-
-.top-bar-logo {
+.logo-container{
   display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  justify-content: center;
+  width: 90%;
+  margin:auto;
 }
-.hide{
-  visibility: hidden;
-}
-.side-bar {
-  display: flex;
-  flex-direction: column;
-  list-style-type: none;
-  top:2;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  position: fixed;
-  right: 0;
-}
-
-.list-right a {
-  padding-top: 15px;
-  font-size: 25px;
-  color:white;
-  transition: 0.3s;
-  display: none !important;
-  right: 0;
-  margin-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  text-shadow: #343a40 2px 2px;
-
-}
-.language-list{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.list-right:hover a {
-  color: #9db6c9;
-  cursor: pointer;
-}
-.language-icon{
-  display:none !important;
-}
+.name-logo{
+  max-width:50%;
 }
 </style>

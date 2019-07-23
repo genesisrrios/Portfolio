@@ -1,6 +1,6 @@
 <template>
   <div class="container" >
-<div class="side-padding">
+<!-- <div class="side-padding">
    <div>
     <h1>{{$t('Contactme.talkToMe1')}}</h1>
     <h1>{{$t('Contactme.talkToMe2')}}</h1>
@@ -42,7 +42,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

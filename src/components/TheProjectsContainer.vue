@@ -1,6 +1,6 @@
 <template>
   <div class="container spacing">
-    <div class="row">
+    <!-- <div class="row">
     <h1 class="header">{{ $t("Projects.tittle") }}</h1>
     </div>    
     <div class="row">
@@ -21,7 +21,7 @@
       <div class="box">
         <div class="box-content"></div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

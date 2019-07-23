@@ -1,13 +1,13 @@
 <template>
   <div class="footer"> 
-	  <div class="icons-row">  		  
+	  <!-- <div class="icons-row">  		  
 		<div class="icons-column">
 		  <img class="icon" src="../assets/github.svg" v-on:click="githubrepo" tittle="Github icon"/>
 	  	</div>
 		  <div class="icons-column" >
 		  <img class="icon" src="../assets/linkedin.svg" v-on:click="linkedin" tittle="Linkedin icon"/>
-		  </div>
-	  </div>
+		  </div> -->
+	  <!-- </div> -->
   </div>
 </template>
 

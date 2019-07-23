@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-      <div class="box box-text">
+      <!-- <div class="box box-text">
           <div class="timeline">
            <div class="box-content">
              <div class="marker"></div>
@@ -16,7 +16,7 @@
           <h2>{{ $t("Experience.eight") }}</h2>
            </div>
       </div>
-      </div>
+      </div> -->
     </div> 
 </template>
 
