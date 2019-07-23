@@ -52,6 +52,7 @@ export default {
 </script>
 
 <style scoped>
+@media only screen and (min-width:400px) and (max-width: 1700px){
 .container {
   width: 100%;
   height: 100vh;
@@ -93,5 +94,35 @@ h1 {
 }
 .left-margin{
   margin-left: 25px;
+}
+}
+@media only screen and (max-width: 667px) and (min-width: 375px) {
+  .container {
+  width: 100%;
+  height: 100vh;
+}
+.box {
+  height: 50%;
+  width: 50%;
+  border-radius: 25px;
+  background-color:white;
+}
+
+h1 {
+  font-size: 45px;
+}
+.header{
+  text-align: center;
+}
+
+.small-top-margin{
+  margin-top:15px;
+}
+.big-top-margin{
+  margin-top:50px;
+}
+.left-margin{
+  margin-left: 25px;
+}
 }
 </style>
