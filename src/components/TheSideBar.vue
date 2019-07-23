@@ -154,4 +154,10 @@ $(document).ready(function() {
 .name-logo{
   max-width:50%;
 }
+@media only screen and (min-width: 662px) {
+
+.mobile-menu-hamburger{
+  display:none;
+}
+}
 </style>

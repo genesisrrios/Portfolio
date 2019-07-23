@@ -28,7 +28,7 @@ export default {
     background-repeat: no-repeat;
     background-position: center center;    
     background-size: 500px 500px;    
-}
+} 
 
 .main-text {
   padding-top: 75px;
