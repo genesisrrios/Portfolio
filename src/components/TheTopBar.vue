@@ -12,10 +12,11 @@
           <li class="language-list">
             <a>
               <img src="../assets/global.svg" alt="Languages icon">
+              <a @click="setLocale('es')" id="language-es" style="cursor:pointer;margin:15px;">es</a>
+              <a @click="setLocale('en')" id="language-en" style="cursor:pointer;">en</a>
             </a>
           </li>
-            <a @click="setLocale('es')" id="language-es" style="cursor:pointer;margin:15px;">es</a>
-            <a @click="setLocale('en')" id="language-en" style="cursor:pointer;">en</a>
+
         </ul>
       </li>
     </ul>
