@@ -40,27 +40,13 @@ export default {
 html {
     scroll-behavior: smooth;
 }
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
 body {
-  background-color: #ddb48d;
-}
-h1{
     font-family: 'Sansita', sans-serif;
-}
-
-h2{
-  font-family: 'Open Sans', sans-serif;
-}
-h3{
-  font-family: 'Open Sans', sans-serif;
-}
-a{
-  font-family: 'Open Sans', sans-serif;
-}
-button {
-  font-family: 'Open Sans', sans-serif;
-}
-.spacing{
-  padding-top: 200px;
 }
 
 </style>
