@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <TheSideBar />
+    <TheTopBar />
     <TheMainText id="about"/>    
     <TheExperienceInformationContainer id="experience" />
     <TheProjectsContainer id="projects"/>
@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import TheSideBar from "./components/TheSideBar";
+import TheTopBar from "./components/TheTopBar";
 import TheExperienceInformationContainer from "./components/TheExperienceInformationContainer";
 import TheMainText from "./components/TheMainText";
 import TheProjectsContainer from "./components/TheProjectsContainer";
@@ -22,7 +22,7 @@ import TheFooterContainer from "./components/TheFooterContainer"
 export default {
   name: "app",
   components: { 
-    TheSideBar,
+    TheTopBar,
     TheExperienceInformationContainer,
     TheMainText,
     TheProjectsContainer,
