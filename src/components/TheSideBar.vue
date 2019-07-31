@@ -1,8 +1,8 @@
 <template>
   <div>
     <nav>
-      <img class="image" v-if="language_english" src="../assets/name-logo-english.svg"/>      
-      <img class="image" v-else src="../assets/name-logo-spanish.svg"/>      
+      <img v-if="language_english" class="logo-english" />      
+      <img v-else class="logo-spanish" />      
       <!-- The hamburger class is used to draw three lines -->
       <div class="hamburger" v-on:click="openResponsiveMenu">
         <div class="line"></div>
@@ -84,8 +84,7 @@ nav{
 ul li{
   list-style: none;  
 }
-.image{
-}
+
 @media screen and (max-width: 700px){
   .line{
     width:30px;
