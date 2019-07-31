@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <TheSideBar />
+    <TheTopBar />
     <TheMainText id="about"/>    
     <TheExperienceInformationContainer id="experience" />
     <TheProjectsContainer id="projects"/>
@@ -41,12 +41,10 @@ html {
     scroll-behavior: smooth;
 }
 body {
-  background-color: #ddb48d;
 }
 h1{
-    font-family: 'Sansita', sans-serif;
+  font-family: 'Sansita', sans-serif;
 }
-
 h2{
   font-family: 'Open Sans', sans-serif;
 }
@@ -55,12 +53,7 @@ h3{
 }
 a{
   font-family: 'Open Sans', sans-serif;
-}
-button {
-  font-family: 'Open Sans', sans-serif;
-}
-.spacing{
-  padding-top: 200px;
+  color:white;
 }
 
 </style>

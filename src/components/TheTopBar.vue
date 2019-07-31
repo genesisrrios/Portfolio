@@ -1,46 +1,17 @@
 <template>
   <div>
-<<<<<<< HEAD:src/components/TheTopBar.vue
-    <ul class="top-bar-logo">
-      <li style="flex: 2 0 0;">
-        <a v-if="language_english">
-           <img  src="../assets/name-logo-english.svg" alt="Name of the author of the profile">
-        </a>
-        <a v-else>
-          <img  src="../assets/name-logo-spanish.svg" alt="Name of the author of the profile">
-        </a>
-        <ul>
-          <li class="language-list">
-            <a>
-              <img src="../assets/global.svg" alt="Languages icon">
-              <a @click="setLocale('es')" id="language-es" style="cursor:pointer;margin:15px;">es</a>
-              <a @click="setLocale('en')" id="language-en" style="cursor:pointer;">en</a>
-            </a>
-          </li>
-
-        </ul>
-      </li>
-    </ul>
-    <ul class="side-bar">
-      <li class="list-right">
-        <a id="sidebar-about" href="#about" style="text-decoration:underline;" >{{ $t("SideBar.about") }}</a>
-      </li>
-      <li class="list-right">
-        <a id="sidebar-experience" href="#experience" style="text-decoration:none;">{{$t("SideBar.experience")}}</a>
-      </li>
-      <li class="list-right">
-        <a id="sidebar-projects" href="#projects" style="text-decoration:none;">{{$t("SideBar.projects")}}</a>
-      </li>
-      <li class="list-right">
-        <a id="sidebar-technologies" href="#technologies" style="text-decoration:none;">{{$t("SideBar.technologies")}}</a>
-      </li>
-      <li class="list-right">
-        <a id="sidebar-contactme" href="#contactme" style="text-decoration:none;">{{$t("SideBar.contactme")}}</a>
-      </li>
-    </ul>
-=======
-
->>>>>>> 8bf45fbbd5678af540e1e058ca07d683c4645e7b:src/components/TheSideBar.vue
+    <nav class="navbar">      
+        <a class="navbar-hamburger"><img src='../assets/hamburger-menu.svg'/></a>
+        <a v-if="language_english"><img class="navbar-logo" src='../assets/name-logo-spanish.svg'/></a>
+        <a v-else><img class="navbar-logo" src='../assets/name-logo-english.svg'/></a>
+      <ul class="nav-links" role="navigation">
+        <li><a class="btn">{{ $t("SideBar.about") }}</a></li>
+        <li><a class="btn">{{ $t("SideBar.experience") }}</a></li>
+        <li><a class="btn">{{ $t("SideBar.projects") }}</a></li>                
+        <li><a class="btn">{{ $t("SideBar.technologies") }}</a></li>                        
+        <li><a class="btn">{{ $t("SideBar.contactme") }}</a></li>               
+      </ul>
+    </nav>
   </div>
 </template>
 
@@ -49,7 +20,7 @@ window.$ = require("jquery");
 window.JQuery = require("jquery");
 
 export default {
-  name: "TheSideBar",
+  name: "TheTopBar",
   props: {
   },
   data() {
@@ -61,13 +32,9 @@ export default {
     checkWhichLanguage(language){
       switch(language){
           case "es":          
-            $("#language-es").css("color","#d71e18");
-            $("#language-en").css("color","white");
             this.language_english = false;
             break;
           case "en":
-            $("#language-en").css("color","#d71e18");  
-            $("#language-es").css("color","white");                  
             this.language_english = true;
             break;  
         }
@@ -83,12 +50,60 @@ export default {
       {
         this.checkWhichLanguage(localStorage.language);
         this.$i18n.locale = localStorage.language;
-
-      }else
+      }
+      else
         this.checkWhichLanguage('es');     
     },
   };
 </script>
-
 <style scoped>
+nav{
+  width:100%;
+  background-color:green;
+  height:130px;
+}
+ ul{
+    list-style: none;
+    padding:0;
+  }
+ @media only screen and (min-width: 909px) {
+  .navbar{
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+  }
+  .navbar-logo{
+    padding-top: 50px;
+    display:inline-block;
+  }
+  .nav-links{
+    display:flex;
+  }
+  li{
+    padding: 10px 15px;
+  }
+  .navbar-hamburger{
+    display:none;
+  }
+  .btn {
+  text-align: center;
+  padding: 15px 10px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 3px;
+  color: black;
+  border: 2px solid #008CBA;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #008CBA;
+  color: white;
+}
+ }
+  @media only screen and (max-width: 909px) {
+  
+}
 </style>
