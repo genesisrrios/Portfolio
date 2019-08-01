@@ -1,1 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" height="100%" width="100%"><g font-weight="400" letter-spacing="0" word-spacing="0"><text style="line-height:1.25;-inkscape-font-specification:'Bradley Hand ITC'" x="22.679" y="259.202" font-size="25.4" font-family="Bradley Hand ITC" fill="#fff" stroke-width=".265" transform="translate(0 -197)"><tspan x="22.679" y="259.202" style="-inkscape-font-specification:'Freestyle Script'" font-size="50.8" font-family="Freestyle Script">Genesis Rivera Rios</tspan></text><text style="line-height:1.25" x="105.763" y="286.999" font-size="48" font-family="sans-serif" stroke-width="1.2" transform="translate(0 -197)"/><text style="line-height:1.25" x="38.487" y="280.938" font-size="48" font-family="sans-serif" stroke-width="1.2" transform="translate(0 -197)"><tspan x="38.487" y="280.938" style="-inkscape-font-specification:Cambria" font-size="16" font-family="Cambria" fill="#f9f9f9">Diseñadora y programadora web</tspan></text></g></svg>
+<svg width="282.44565773010254" height="87.93800735473633" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1" font-weight="400">
+   <text transform="matrix(1.07686, 0, 0, 1.43524, -21.6917, -38.2169)" id="svg_2" stroke-width="0.265" fill="#000000" font-family="Bradley Hand ITC" font-size="25.4" y="62.202" x="22.679">
+    <tspan fill="#000000" id="svg_3" font-family="Freestyle Script" font-size="50.8" y="62.202" x="22.679">Genesis Rivera Rios</tspan>
+   </text>
+   <text transform="matrix(1.07686, 0, 0, 1.43524, -21.6917, -38.2169)" fill="#000000" id="svg_4" stroke-width="1.2" font-family="sans-serif" font-size="48" y="89.999" x="105.763"/>
+   <text transform="matrix(1.07686, 0, 0, 1.43524, -21.6917, -38.2169)" fill="#000000" id="svg_5" stroke-width="1.2" font-family="sans-serif" font-size="48" y="83.938" x="38.487">
+    <tspan id="svg_6" fill="#000000" font-family="Cambria" font-size="16" y="83.938" x="38.487">Diseñadora y programadora web</tspan>
+   </text>
+  </g>
+ </g>
+</svg>
