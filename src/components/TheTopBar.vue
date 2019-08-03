@@ -1,20 +1,22 @@
 <template>
   <div>
     <nav>
-      <!-- The hamburger class is used to draw three lines -->
-      <div class="hamburger" v-on:click="openResponsiveMenu">
+            <!-- The hamburger class is used to draw three lines -->      
+     <div class="hamburger" v-on:click="openResponsiveMenu">
         <div class="line"></div>
         <div class="line"></div>
-        <div class="line"></div>                
-      </div>
+        <div class="line"></div>
+        </div>            
+        <img v-if="language_english" class="image-mobile" src="../assets/name-logo-english.svg"/>
+        <img v-else class="image-mobile" src="../assets/name-logo-spanish.svg"/>
       <ul class="nav-links">
-        <li v-if="language_english"><img /><img src="../assets/name-logo-english.svg"/></li>
-        <li v-else><img src="../assets/name-logo-spanish.svg"/></li>
-        <li><a class="nav-items" href="">{{ $t("SideBar.about") }}</a></li>
-        <li><a class="nav-items" href="">{{ $t("SideBar.experience") }}</a></li>
-        <li><a class="nav-items" href="">{{ $t("SideBar.projects") }}</a></li>        
-        <li><a class="nav-items" href="">{{ $t("SideBar.technologies") }}</a></li>
-        <li><a class="nav-items" href="">{{ $t("SideBar.contactme") }}</a></li>                
+        <li v-if="language_english"><img class="image-desktop" src="../assets/name-logo-english.svg"/></li>
+        <li v-else><img class="image-desktop" src="../assets/name-logo-spanish.svg"/></li>
+        <li class="nav-items btn"><a href="">{{ $t("SideBar.about") }}</a></li>
+        <li class="nav-items btn"><a href="">{{ $t("SideBar.experience") }}</a></li>
+        <li class="nav-items btn"><a href="">{{ $t("SideBar.projects") }}</a></li>        
+        <li class="nav-items btn"><a href="">{{ $t("SideBar.technologies") }}</a></li>
+        <li class="nav-items btn"><a href="">{{ $t("SideBar.contactme") }}</a></li>                
       </ul>
     </nav>
   </div>
@@ -50,7 +52,7 @@ export default {
       this.$i18n.locale = language;
     },
     openResponsiveMenu(){
-      $('.nav-links').toggleClass('open');
+      $('.nav-links').toggleClass('active');
     }
   },
   mounted(){
@@ -66,63 +68,77 @@ export default {
 </script>
 <style scoped>
 nav{
-  height:10vh;
-  background:#5b78c7;
+  background:#222;
+  padding:5px 20px;
 }
-.nav-links{
-  display: -webkit-flex;
-  display:flex;
+ul{
+  list-style-type: none;
 }
-.nav-links li:first-child{
-  margin-right: auto;
-}
-.nav-items{
-  color:white;  
+a{
+  color:white;
   text-decoration: none;
 }
-ul li{
-  list-style: none;  
+a:hover{
+  font-size: 20px;
 }
-
-@media screen and (max-width: 700px){
-  .line{
-    width:30px;
-    height:3px;
-    background:white;
-    margin:5px;
-  }
-  nav{
-    position: relative;
+.nav-links li{
+  padding:15px 5px;
+  white-space: nowrap;
+}
+.nav-links{
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+li:first-child{
+  height: 67px;
+  width: 275px;
+}
+.image-desktop{
+  width:100%;
+  height:100%;
+}
+.image-mobile{
+  display: none;
+}
+@media only screen and (max-width: 1280px) {
+ .line{
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
   }
   .hamburger{
-    position:absolute;
-    cursor: pointer;
-    right:5%;
-    top:50%;
-    transform: translate(-5%,-50%);
-    z-index: 2;
+    order:2;
+    display:inline-block;
+    width: 50%;
   }
-  .nav-links{
-      position:fixed;
-      background-color: #5b78c7;
-      height: 100vh;
-      width: 100%;
-      flex-direction: column;
-      clip-path: circle(100px at 90% -10%);
-      -webkit-clip-path: circle(100px at 90% -10%);
-      transition: all 1s ease-out;
-      pointer-events: none;
-  }
-  .nav-links.open{
-      clip-path: circle(1200px at 90% -10%);
-      -webkit-clip-path: circle(1000px at 90% -10%);
-      pointer-events: all;
-  }
-  .nav-items{
-    font-size: 25px;
-  } 
-  .image{
-    display:none;
-  }
+.nav-links{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:center;
+  height: 100vh;
+  display: none;
+}
+.nav-items{
+  width:100%;
+  text-align: center;
+}
+.nav-links.active{
+  display:block;
+}
+.image-desktop{
+  display:none;
+}
+.image-mobile{
+  display: inline-block;
+  height: 40px;
+  width: 50%;
+  vertical-align: top;
+}
+.nav-links li{
+  padding:40px 5px;
+}
 }
 </style>

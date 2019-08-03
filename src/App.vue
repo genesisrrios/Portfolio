@@ -46,6 +46,8 @@ html {
   box-sizing: border-box;
 }
 body {
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Open Sans', sans-serif;
     font-family: 'Sansita', sans-serif;
 }
 
