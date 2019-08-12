@@ -31,6 +31,9 @@ div .main-content{
 }
 h1{
   text-align: center;
+  -webkit-text-fill-color: #afddb5; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #305d8a;
 }
 .image{
   height: 150px;

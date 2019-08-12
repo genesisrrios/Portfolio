@@ -42,12 +42,12 @@ export default {
           case "es":          
             this.language_english = false;
             $("#en").css('color','white');
-            $("#es").css('color','#eae8e1');            
+            $("#es").css('color','#afddb5');            
             break;
           case "en":
             this.language_english = true;
             $("#es").css('color','white');
-            $("#en").css('color','#eae8e1');
+            $("#en").css('color','#afddb5');
             break;  
         }
     },    
