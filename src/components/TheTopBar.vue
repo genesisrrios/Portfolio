@@ -38,16 +38,22 @@ export default {
   },  
   methods:{
     checkWhichLanguage(language){
+      const enATag = document.getElementById("#en");
+      const esATag = document.getElementById("#es");      
       switch(language){
           case "es":          
             this.language_english = false;
-            $("#en").css('color','white');
-            $("#es").css('color','#eae8e1');            
+            enATag.style.color = "white";
+            esATag.style.color = "#eae8e1";            
+            // $("#en").css('color','white');
+            // $("#es").css('color','#eae8e1');       
             break;
           case "en":
             this.language_english = true;
-            $("#es").css('color','white');
-            $("#en").css('color','#eae8e1');
+            enATag.style.color = "#eae8e1";
+            esATag.style.color = "white";
+            // $("#es").css('color','white');
+            // $("#en").css('color','#eae8e1');
             break;  
         }
     },    
