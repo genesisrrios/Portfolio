@@ -24,9 +24,6 @@
 </template>
 
 <script>
-window.$ = require("jquery");
-window.JQuery = require("jquery");
-
 export default {
   name: "TheTopBar",
   props: {
@@ -38,22 +35,18 @@ export default {
   },  
   methods:{
     checkWhichLanguage(language){
-      const enATag = document.getElementById("#en");
-      const esATag = document.getElementById("#es");      
+      const enTag = document.getElementById("en");
+      const esTag = document.getElementById("es");      
       switch(language){
           case "es":          
             this.language_english = false;
-            enATag.style.color = "white";
-            esATag.style.color = "#eae8e1";            
-            // $("#en").css('color','white');
-            // $("#es").css('color','#eae8e1');       
+            enTag.style.color = "white";
+            esTag.style.color = "#eae8e1";            
             break;
           case "en":
             this.language_english = true;
-            enATag.style.color = "#eae8e1";
-            esATag.style.color = "white";
-            // $("#es").css('color','white');
-            // $("#en").css('color','#eae8e1');
+            enTag.style.color = "#eae8e1";
+            esTag.style.color = "white";
             break;  
         }
     },    
@@ -63,7 +56,8 @@ export default {
       this.$i18n.locale = language;
     },
     openResponsiveMenu(){
-      $('.nav-links').toggleClass('active');
+      const navLinks = document.querySelector(".nav-links");
+      navLinks.classList.toggle('active');
     }
   },
   mounted(){
@@ -170,6 +164,7 @@ li:first-child{
   width: 20%;
   vertical-align: top;
 }
-
 }
+
+
 </style>

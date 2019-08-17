@@ -10,7 +10,6 @@
 </template>
 
 <script>
-
 export default {
   name: "TheMainText"
 };
@@ -50,5 +49,4 @@ h1{
   height: 150px;
 } 
 }
-
 </style>

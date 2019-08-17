@@ -3,29 +3,37 @@
       <div class="timeline">
         <ul>
           <li>
-            <div class="row-left">
+            <div class="row-left ">
               <div class="card">
-              <h2 class="rounder-borders">2019</h2>
-              <h3>{{$t("Experience.first")}}</h3>
+              <h2 class="rounder-borders center">2019</h2>
+              <p>{{$t("Experience.first")}}</p>
               </div>
             </div>
             <div class="row-right">
               <div class="card">
-              <h2 class="rounder-borders" >2018</h2>
-              <h3>
-                {{$t("Experience.second")}}                
-                {{$t("Experience.third")}}                
-                {{$t("Experience.fourth")}}    
-                {{$t("Experience.fifth")}}
+              <h2 class="rounder-borders center" >2018</h2>
+              <p>
+                {{$t("Experience.second")}}
+              </p>
+              <p>
+                {{$t("Experience.third")}}     
+              </p>
+              <p>
+                {{$t("Experience.fourth")}}
+                <span class="tool-tip">
+                  {{$t("Experience.fifth")}}
+                <span class="tool-tip-text">
                 {{$t("Experience.sixth")}}
+                </span>
+                </span>
                 {{$t("Experience.seventh")}}
-              </h3>
+              </p>
                 </div>
             </div>
             <div class="row-left">
             <div class="card">
-              <h2 class="rounder-borders">2015</h2>
-              <h3>{{$t("Experience.eight")}}</h3>
+              <h2 class="rounder-borders center">2015</h2>
+              <p>{{$t("Experience.eight")}}</p>
             </div>
             </div>
           </li>
@@ -85,5 +93,55 @@ ul li{
   display: flex;
   justify-content: left;
 }
-
+.tool-tip{
+  cursor: pointer;
+  color: #0000EE ;
+}
+.tool-tip-text{
+  display:none;
+  background-color: #afddb5;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  margin-left: -60px;  
+}
+.tool-tip:hover .tool-tip-text{
+  display: block;
+}
+@media only screen and (max-width: 1280px) {
+ul li{
+  list-style: none;
+  
+}
+.card{
+  width: 100%;
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+}
+.timeline {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.timeline::after {
+  content: '';
+  display: none;
+}
+.row-right{
+  display: flex;
+  justify-content: center;
+}
+.row-left{
+  display: flex;
+  justify-content: center;
+}
+.center{
+  display: flex;
+  justify-content: center;
+}
+}
 </style>
