@@ -3,37 +3,35 @@
       <div class="timeline">
         <ul>
           <li>
-            <div class="content content-left">
-              <div class="time">
-              <h3>-2019</h3>
+            <div class="row-left">
+              <div class="card">
+              <h2 class="rounder-borders">2019</h2>
+              <h3>{{$t("Experience.first")}}</h3>
               </div>
-              <p >{{$t("Experience.first")}}</p>
+            </div>
+            <div class="row-right">
+              <div class="card">
+              <h2 class="rounder-borders" >2018</h2>
+              <h3>
+                {{$t("Experience.second")}}                
+                {{$t("Experience.third")}}                
+                {{$t("Experience.fourth")}}    
+                {{$t("Experience.fifth")}}
+                {{$t("Experience.sixth")}}
+                {{$t("Experience.seventh")}}
+              </h3>
+                </div>
+            </div>
+            <div class="row-left">
+            <div class="card">
+              <h2 class="rounder-borders">2015</h2>
+              <h3>{{$t("Experience.eight")}}</h3>
+            </div>
             </div>
           </li>
-          <li>
-            <div class="content content-right">
-              <div class="time">
-              <h3>-2016/2018</h3>
-              </div>
-              <p>{{$t("Experience.second")}}{{$t("Experience.third")}}
-                {{$t("Experience.fourth")}}</p>
-                <div class="tool-tip"><p>{{$t("Experience.fifth")}}</p></div>
-                <div class="tool-tip-text"><p>{{$t("Experience.sixth")}}</p></div>
-                {{$t("Experience.seventh")}}
-            </div>
-            </li>
-            <li>
-            <div class="content content-left">
-              <div class="time">
-              <h3>-2015</h3>
-              </div>
-              <p>{{$t("Experience.eight")}}</p>
-            </div>                        
-            </li>
         </ul>
       </div>
-
-    </div> 
+  </div>       
 </template>
 
 <script>
@@ -44,43 +42,48 @@ export default {
 </script>
 
 <style scoped>
+h2{
+  display:inline-block;
+  color:white;
+  
+}
 .container{
   height:100vh;
   width: 100vw;
 }
-.timeline{
-  position:relative;
-  margin:50px auto;
-  padding: 40px 0;
-  width:40%;
-  align-content: center;
-}
-.timeline:before{
-  content:'';
-  position:absolute;
-  left:50%;
-  width:2px;
-  height:100%;
-  background: #9db6c9;
-}
-.timeline ul li{
+ul li{
   list-style: none;
+}
+.card{
+  width: 40%;
+  height: 40%;
+  padding: 10px 40px;
   position: relative;
-  width:90%;
-  padding: 20px 40px;
-  box-sizing: border-box;
+  background-color: inherit;
+  width: 50%;  
+}
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #9db6c9;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+.row-right{
   display: flex;
-  flex-wrap: nowrap;
-  align-items: flex-start;
-  justify-content: space-between;
+  justify-content: right;
 }
-.content{
+.row-left{
+  display: flex;
+  justify-content: left;
 }
-.content-right{
-  align-content: right;
-}
-.content-left{
-  align-content: left;
-    justify-content: flex-end;
-}
+
 </style>

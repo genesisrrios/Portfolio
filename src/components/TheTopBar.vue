@@ -43,6 +43,7 @@ export default {
       switch(language){
           case "es":          
             this.language_english = false;
+<<<<<<< HEAD
             enATag.style.color = "white";
             esATag.style.color = "#eae8e1";            
             // $("#en").css('color','white');
@@ -54,6 +55,15 @@ export default {
             esATag.style.color = "white";
             // $("#es").css('color','white');
             // $("#en").css('color','#eae8e1');
+=======
+            $("#en").css('color','white');
+            $("#es").css('color','#afddb5');            
+            break;
+          case "en":
+            this.language_english = true;
+            $("#es").css('color','white');
+            $("#en").css('color','#afddb5');
+>>>>>>> 6980e0f619899d55b0662cbcce6f6fb5eeff0cbf
             break;  
         }
     },    
