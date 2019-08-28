@@ -50,10 +50,14 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-family: 'Sansita', sans-serif;
 }
-.rounder-borders{
-  border-radius: 15px;
-  border: 2px solid #afddb5;
-  background:#afddb5;
-  padding: 3px 10px 3px 10px;   
+a{
+  font-family: 'Sansita', sans-serif;
 }
+p{
+  font-family: 'Sansita', sans-serif;
+}
+h1{
+  font-family: 'Sansita', sans-serif;
+}
+
 </style>

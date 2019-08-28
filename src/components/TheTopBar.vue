@@ -1,25 +1,30 @@
 <template>
   <div>
-    <nav>
+    <header>
             <!-- The hamburger class is used to draw three lines -->      
      <div class="hamburger" v-on:click="openResponsiveMenu">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
         </div>            
-        <img v-if="language_english" class="image-mobile" src="../assets/name-logo-english.svg"/>
-        <img v-else class="image-mobile" src="../assets/name-logo-spanish.svg"/>
-      <ul class="nav-links">
-        <li v-if="language_english"><img class="image-desktop" src="../assets/name-logo-english.svg"/></li>
-        <li v-else><img class="image-desktop" src="../assets/name-logo-spanish.svg"/></li>
-        <li class="nav-items btn"><a class="nav-items btn language-btn" v-on:click="setLocale('en')" id="en">en</a> <a class="nav-items btn language-btn" v-on:click="setLocale('es')" id="es">es</a></li>        
-        <li class="nav-items btn"><a href="">{{ $t("SideBar.about") }}</a></li>        
-        <li class="nav-items btn"><a href="">{{ $t("SideBar.experience") }}</a></li>
-        <li class="nav-items btn"><a href="">{{ $t("SideBar.projects") }}</a></li>        
-        <li class="nav-items btn"><a href="">{{ $t("SideBar.technologies") }}</a></li>
-        <li class="nav-items btn"><a href="">{{ $t("SideBar.contactme") }}</a></li>                
+        <img v-if="language_english" class="image-mobile" alt="Name of the author of the website" src="../assets/name-logo-english.svg"/>
+        <img v-else class="image-mobile" alt="Name of the author of the website" src="../assets/name-logo-spanish.svg"/>
+      <ul class="header-links">
+        <li v-if="language_english"><img class="image-desktop" alt="Name of the author of the website" src="../assets/name-logo-english.svg"/></li>
+        <li v-else><img class="image-desktop" alt="Name of the author of the website" src="../assets/name-logo-spanish.svg"/></li>
+        <li class="header-items btn">
+          <a class="header-items btn language-btn" v-on:click="setLocale('en')" id="en">en</a> 
+          <span class="dot-en"></span>
+          <a class="header-items btn language-btn" v-on:click="setLocale('es')" id="es">es</a>
+          <span class="dot-es"></span>          
+        </li>        
+        <li class="header-items btn"><a href="#about">{{ $t("SideBar.about") }}</a></li>        
+        <li class="header-items btn"><a href="#experience">{{ $t("SideBar.experience") }}</a></li>
+        <li class="header-items btn"><a href="#projects">{{ $t("SideBar.projects") }}</a></li>        
+        <li class="header-items btn"><a href="#technologies">{{ $t("SideBar.technologies") }}</a></li>
+        <li class="header-items btn"><a href="#contactme">{{ $t("SideBar.contactme") }}</a></li>                
       </ul>
-    </nav>
+    </header>
   </div>
 </template>
 
@@ -36,17 +41,33 @@ export default {
   methods:{
     checkWhichLanguage(language){
       const enTag = document.getElementById("en");
-      const esTag = document.getElementById("es");      
+      const esTag = document.getElementById("es");
+      // const dot_es = document.getElementsByClassName('dot-es')[0];
+      // const dot_en = document.getElementsByClassName('dot-en')[0];      
       switch(language){
           case "es":          
             this.language_english = false;
-            enTag.style.color = "white";
-            esTag.style.color = "#eae8e1";            
+            enTag.style.margin = 0;
+            enTag.style.padding = "";
+            enTag.style.border = "";
+            enTag.style.borderRadius = "";              
+            esTag.style.padding = "5px 10px 5px 10px";
+            esTag.style.border = "2px solid white";
+            esTag.style.borderRadius = "5px";
+            esTag.style.fontSize = "20px";
+            enTag.style.fontSize = "";
             break;
           case "en":
             this.language_english = true;
-            enTag.style.color = "#eae8e1";
-            esTag.style.color = "white";
+            enTag.style.margin = 0;
+            esTag.style.padding = "";
+            esTag.style.border = "";
+            esTag.style.borderRadius = "";            
+            enTag.style.padding = "5px 10px 5px 10px";
+            enTag.style.border = "2px solid white";
+            enTag.style.borderRadius = "5px";
+            esTag.style.fontSize = "";
+            enTag.style.fontSize = "20px";
             break;  
         }
     },    
@@ -56,8 +77,8 @@ export default {
       this.$i18n.locale = language;
     },
     openResponsiveMenu(){
-      const navLinks = document.querySelector(".nav-links");
-      navLinks.classList.toggle('active');
+      const headerLinks = document.querySelector(".header-links");
+      headerLinks.classList.toggle('active');
     }
   },
   mounted(){
@@ -72,7 +93,7 @@ export default {
   };
 </script>
 <style scoped>
-nav{
+header{
   background:#9db6c9;
   padding:5px 20px;
 }
@@ -86,15 +107,20 @@ a{
 a:hover{
   font-size: 20px;
 }
-.nav-links li{
+.header-links li{
   padding:15px 5px;
   white-space: nowrap;
 }
-.nav-links{
-
+.header-links{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items:center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align:center;
+  -ms-flex-align:center;
+          align-items:center;
 }
 li:first-child{
   height: 67px;
@@ -123,26 +149,33 @@ li:first-child{
     display:inline-block;
     width: 50%;
   }
-.nav-links{
+.header-links{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
   align-items:center;
-  height: 1000vh;
+  height: 100vh;
   display: none;
 }
-.nav-items{
+.header-items{
   width:100%;
   text-align: center;
 }
-.nav-links.active{
+.header-links.active{
   display:block;
 }
 .image-desktop{
   display:none;
 }
 
-.nav-links li{
+.header-links li{
   padding:40px 5px;
 }
 }
@@ -165,6 +198,4 @@ li:first-child{
   vertical-align: top;
 }
 }
-
-
 </style>

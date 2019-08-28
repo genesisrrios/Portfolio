@@ -1,45 +1,47 @@
 <template>
     <div class="container">
+      <section>
       <div class="timeline">
         <ul>
-          <li>
-            <div class="row-left ">
+          <li class="row-left">
               <div class="card">
-              <h2 class="rounder-borders center">2019</h2>
+              <h2 class="rounded-borders center">2019</h2>
               <p>{{$t("Experience.first")}}</p>
               </div>
-            </div>
-            <div class="row-right">
-              <div class="card">
-              <h2 class="rounder-borders center" >2018</h2>
+          </li>
+          <li class="row-right">
+                <div class="card">
+              <h2 class="rounded-borders center" >2018</h2>
               <p>
                 {{$t("Experience.second")}}
               </p>
+              <br/>
               <p>
                 {{$t("Experience.third")}}     
               </p>
               <p>
+                <br/>
                 {{$t("Experience.fourth")}}
                 <span class="tool-tip">
-                  {{$t("Experience.fifth")}}
+                  {{$t("Experience.fifth")}}  
                 <span class="tool-tip-text">
                 {{$t("Experience.sixth")}}
                 </span>
                 </span>
                 {{$t("Experience.seventh")}}
               </p>
-                </div>
             </div>
-            <div class="row-left">
-            <div class="card">
-              <h2 class="rounder-borders center">2015</h2>
+            </li>
+            <li class="row-left">
+              <div class="card">
+              <h2 class="rounded-borders center">2015</h2>
               <p>{{$t("Experience.eight")}}</p>
             </div>
-            </div>
-          </li>
+            </li>
         </ul>
       </div>
-  </div>       
+      </section>
+  </div>    
 </template>
 
 <script>
@@ -50,6 +52,27 @@ export default {
 </script>
 
 <style scoped>
+.row-left{
+  display:-webkit-box;  
+  display:-ms-flexbox;  
+  display:flex;
+  }
+.row-right{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+          justify-content: flex-end;
+  }
+p{
+  font-size: 20px;
+  color:#305d8a;
+}
 h2{
   display:inline-block;
   color:white;
@@ -85,14 +108,7 @@ ul li{
   left: 50%;
   margin-left: -3px;
 }
-.row-right{
-  display: flex;
-  justify-content: right;
-}
-.row-left{
-  display: flex;
-  justify-content: left;
-}
+
 .tool-tip{
   cursor: pointer;
   color: #0000EE ;
@@ -110,6 +126,12 @@ ul li{
 }
 .tool-tip:hover .tool-tip-text{
   display: block;
+}
+.rounded-borders{
+  border-radius: 15px;
+  border: 2px solid #afddb5;
+  background:#afddb5;
+  padding: 3px 10px 3px 10px;   
 }
 @media only screen and (max-width: 1280px) {
 ul li{
@@ -132,16 +154,28 @@ ul li{
   display: none;
 }
 .row-right{
+ display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+          justify-content: center;
 }
 .row-left{
+ display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+          justify-content: center;
 }
 .center{
+ display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+          justify-content: center;
 }
 }
 </style>

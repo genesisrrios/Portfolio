@@ -1,11 +1,13 @@
 <template>
   <div id="app">
+    <section>
       <div class="container">
         <div class="main-content">
-           <h1 class="main-text">{{ $t("MainText.introduction") }}</h1>
-          <img class="image" src="../assets/main-text-laptop.svg" />
+            <h1 class="main-text">{{ $t("MainText.introduction") }}</h1>
+            <img class="image" alt="SVG Image of a laptop with a cactus and a lamp" src="../assets/main-text-laptop.svg" />
+          </div>
         </div>
-      </div>
+      </section>
     </div>
 </template>
 
@@ -27,12 +29,11 @@ div .main-content{
 .main-text{
   width:55%;
   padding: 150px 0px 40px 0px;
+  color:#305d8a;
+  font-size: 2em;  
 }
 h1{
   text-align: center;
-  -webkit-text-fill-color: #afddb5; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1.5px;
-  -webkit-text-stroke-color: #305d8a;
 }
 .image{
   height: 150px;
@@ -40,6 +41,7 @@ h1{
 @media only screen and (max-width: 1280px) {
  .main-text{
   width:100%;
+  font-size: 1.3em;
 }
 h1{
   text-align: center;
