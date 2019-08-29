@@ -52,6 +52,10 @@ export default {
 </script>
 
 <style scoped>
+.container{
+  height:120vh;
+  width: 100vw;
+}
 .row-left{
   display:-webkit-box;  
   display:-ms-flexbox;  
@@ -70,17 +74,13 @@ export default {
           justify-content: flex-end;
   }
 p{
-  font-size: 20px;
+  font-size: 25px;
   color:#305d8a;
 }
 h2{
   display:inline-block;
   color:white;
   
-}
-.container{
-  height:100vh;
-  width: 100vw;
 }
 ul li{
   list-style: none;
@@ -134,6 +134,10 @@ ul li{
   padding: 3px 10px 3px 10px;   
 }
 @media only screen and (max-width: 1280px) {
+.container{
+  height:135vh;
+  width: 100vw;
+}
 ul li{
   list-style: none;
   
