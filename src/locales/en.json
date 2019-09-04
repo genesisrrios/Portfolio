@@ -1,46 +1,47 @@
 {
- "SideBar":{
-    "about":"About me",
-    "experience":"Experience",
-    "projects":"Projects",
-    "technologies":"Technologies",
-    "contactme":"Contact me"
- },
- "MainText":{
-   "introduction": "Hello! my name is Genesis Rivera Ríos, I specialize in solving problems of small and medium companies by creating and designing effective web pages according to their needs."
- },
-"Experience"  :{
-   "first":"I work full time programming web applications for Multisystems Inc. in San Juan which has given me the opportunity to gain experience working with larger scale projects that users use daily; I also participate in talks related to web programming and I keep up with the most popular technologies.",
-   "second":"I graduated from a Bachelor's Degree focused on information technology systems.",
-   "third" : "Completed an internship in Engine-4 at Bayamón in which, together with a group of developers, I helped create a web page to visualize data.",
-   "fourth":"Won a",
-   "fifth":"Hackaton",
-   "sixth":"It's a web development marathon; a meeting of programmers whose objective is the collaborative development of software. The participants are organized in groups and each one has projects and challenges to achieve.",
-   "seventh":"in which, together with a group of developers, we created a website that would be used as an educational platform for Puerto Rican students.",
-   "eight":"Finished a Technical Degree at Turabo university focused on information technology systems and networking."
- },
- "Contactme":{
-    "email":"Email",
-    "name":"Name",
-    "phone":"Phone number",
-    "note":"Note (optional)",
-    "send":"Send",
-    "messageSent":"Thank you for communicating with me, i'll be contacting you soon!",
-    "great":"perfect",
-    "requiredFields": "Please enter information on all required fields",
-    "talkToMe1": "Feel free to talk to me, ",
-    "talkToMe2":"I am always open to ",
-    "talkToMe3":"discussing new project ideas!",
-    "aboutQuestions":"Some of the questions i'll be asking are:",
-    "question1":"What type of business is the website for?",
-    "question2":"Any special requirements you might have.",
-    "question3":"Any specific deadline?"    
- },
- "Technologies":{
-    "tittle" : "Skills and technologies"
- },
- "Projects":{
-    "tittle":"Projects"
- }
+   "SideBar": {
+      "about": "About me",
+      "experience": "Experience",
+      "projects": "Projects",
+      "technologies": "Technologies",
+      "contactme": "Contact me"
+   },
+   "MainText": {
+      "introduction": "Hello! my name is Genesis Rivera Ríos, I specialize in solving problems of small and medium companies by creating and designing effective web pages according to their needs."
+   },
+   "Experience": {
+      "tittle": "Experience",
+      "first": "I work full time programming web applications for Multisystems Inc. in San Juan which has given me the opportunity to gain experience working with larger scale projects that users use daily; I also participate in talks related to web programming and I keep up with the most popular technologies.",
+      "second": "I graduated from a Bachelor's Degree focused on information technology systems.",
+      "third": "Completed an internship in Engine-4 at Bayamón in which, together with a group of developers, I helped create a web page to visualize data.",
+      "fourth": "Won a",
+      "fifth": "Hackaton",
+      "sixth": "It's a web development marathon; a meeting of programmers whose objective is the collaborative development of software. The participants are organized in groups and each one has projects and challenges to achieve.",
+      "seventh": "in which, together with a group of developers, we created a website that would be used as an educational platform for Puerto Rican students.",
+      "eight": "Finished a Technical Degree at Turabo university focused on information technology systems and networking."
+   },
+   "Contactme": {
+      "tittle": "Contact me",
+      "email": "Email",
+      "name": "Name",
+      "phone": "Phone number",
+      "note": "Note (optional)",
+      "send": "Send",
+      "messageSent": "Thank you for communicating with me, i'll be contacting you soon!",
+      "great": "perfect",
+      "requiredFields": "Please enter information on all required fields",
+      "talkToMe1": "Feel free to talk to me, ",
+      "talkToMe2": "I am always open to ",
+      "talkToMe3": "discussing new project ideas!",
+      "aboutQuestions": "Some of the questions i'll be asking are:",
+      "question1": "What type of business is the website for?",
+      "question2": "Any special requirements you might have.",
+      "question3": "Any specific deadline?"
+   },
+   "Technologies": {
+      "tittle": "Skills and technologies"
+   },
+   "Projects": {
+      "tittle": "Projects"
+   }
 }
-  

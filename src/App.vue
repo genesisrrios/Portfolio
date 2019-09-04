@@ -6,7 +6,7 @@
     <TheProjectsContainer id="projects"/>
     <TheTechnologiesContainer id="technologies"/> 
     <TheContactUsForm id="contactme"/>
-    <TheFooterContainer/>
+    <TheFooterContainer/>    
     </div>
 </template>
 
@@ -17,18 +17,18 @@ import TheMainText from "./components/TheMainText";
 import TheProjectsContainer from "./components/TheProjectsContainer";
 import TheContactUsForm from "./components/TheContactUsForm";
 import TheTechnologiesContainer from "./components/TheTechnologiesContainer";
-import TheFooterContainer from "./components/TheFooterContainer"
+import TheFooterContainer from "./components/TheFooterContainer";
 
 export default {
   name: "app",
   components: { 
+    TheFooterContainer,
     TheTopBar,
     TheExperienceInformationContainer,
     TheMainText,
     TheProjectsContainer,
     TheContactUsForm,
     TheTechnologiesContainer,
-    TheFooterContainer
      },
   mounted() {
 
@@ -60,5 +60,13 @@ p{
 h1{
   font-family: 'Sansita', sans-serif;
 }
-
+.tittle{
+  color:#305d8a;
+  font-size: 2em; 
+  text-align:center;
+}
+.center-tittle{
+  margin: auto;
+  width: 50%;
+}
 </style>

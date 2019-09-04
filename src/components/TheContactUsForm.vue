@@ -1,24 +1,31 @@
 <template>
   <section class="container">
+  <div class="center">
+  <div class="center-tittle">
+  <h1 class="tittle tittle-custom">{{$t("Contactme.tittle")}}</h1>
+  </div>
+  <div>
     <form v-on:keyup.enter="sendEmail">
       <div class="row">
       <h2>{{$t("Contactme.name")}} </h2>
-      <input type="text" name="name" v-model="name">
+      <input type="text" name="name" v-model="name" require>
       </div>
       <div class="row">
-      <h2>{{$t("Contactme.phone")}} </h2>        
+      <h2>{{$t("Contactme.phone")}} </h2>
       <input type="phone" name="phone" v-model="phone"> 
       </div>
       <div class="row">
         <h2>{{$t("Contactme.email")}}</h2>
-      <input type="email" name="email" v-model="email">           
+      <input type="email" name="email" v-model="email" require>           
       </div>
       <div class="row">
         <h2>{{$t("Contactme.note")}}</h2>
       <input type="text" name="note" v-model="note">      
       </div>
     </form>
-    <button class="btn">{{$t("Contactme.send")}}</button>
+    <button class="btn" v-on:click="sendEmail">{{$t("Contactme.send")}}</button>
+    </div>
+    </div>
   </section>
 </template>
 
@@ -52,22 +59,43 @@ export default {
   }
 };
 </script>
-
 <style scoped>
 .container{
-  height:120vh;
-  width: 100vw;
+  height:90vh;
+  width: 100vw;  
+}
+h1{
+  color:#305d8a;
 }
 h2{
   color:#305d8a;
 }
-.row{
-  display: flex;
-  flex-direction: row;
-
-}
 input{
-  flex-grow: 1;
-
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius:20px;
+  border-color: #03a734;
+  }
+.center{
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;    
+}
+.btn{
+  background-color:   #305d8a; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius:20px;
+  cursor:pointer;
+}
+.tittle-custom{
+  margin-bottom:60px;
 }
 </style>

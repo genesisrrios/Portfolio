@@ -1,5 +1,8 @@
 <template>
   <section class="container">
+  <div class="center-tittle">
+    <h1 class="tittle">{{$t("Projects.tittle")}}</h1>
+    </div>
     <div class="row">
       <div class="column">
       <div class=" box rounded-borders ">
@@ -50,7 +53,8 @@ export default {
 </script>
 <style scoped>
 .container{
-  height:100vh;
+  height:130vh;
+  width: 100vw;
 }
 .row{
 display: -webkit-box;
@@ -68,7 +72,7 @@ display: -webkit-box;
   -webkit-box-pack: center;
   -ms-flex-pack: center;  flex-direction: column;
   flex: 1;
-  align-items: center;     /* center items horizontally, in this case */  
+  align-items: center;  
 }
 .box{
   background:#afddb5;
@@ -77,13 +81,6 @@ display: -webkit-box;
   text-align: center;
   margin:16px auto;
 }
-/* .box-content{
-  background-color: white;
-  padding:10px;
-  width: 85%;
-  height:85%;
-  margin:0 auto;
-} */
 .rounded-borders{
   border-radius: 10px;
   padding: 10px;
@@ -103,6 +100,10 @@ display: -webkit-box;
   cursor: pointer;
  }
 @media only screen and (max-width: 1069px) {
+.container{
+  height:190vh;
+  width: 100vw;
+}
 .github-logo{
   height:50px;
   width: 50px;
@@ -114,12 +115,5 @@ display: -webkit-box;
   height:335px;
   flex-grow: 1;
 }
-/* .box-content{
-  background-color: white;
-  padding:10px;
-  width: 80%;
-  height:80%;
-  margin:0 auto;
-} */
 }
 </style>

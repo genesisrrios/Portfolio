@@ -1,5 +1,8 @@
 <template>
     <section class="container">
+    <div class="center-tittle">
+    <h1 class="tittle">{{$t("Experience.tittle")}}</h1>
+    </div>
       <div class="timeline">
         <ul>
           <li class="row-left">
@@ -113,7 +116,7 @@ ul li{
 }
 .tool-tip-text{
   display:none;
-  background-color: #afddb5;
+  background-color:#305d8a;
   color: #fff;
   text-align: center;
   border-radius: 6px;
@@ -127,10 +130,11 @@ ul li{
 }
 .rounded-borders{
   border-radius: 15px;
-  border: 2px solid #afddb5;
-  background: #afddb5;
+  border: 2px solid #305d8a;
+  background: #305d8a;
   padding: 3px 10px 3px 10px;   
 }
+
 @media only screen and (max-width: 1280px) {
 .container{
   height:140vh;

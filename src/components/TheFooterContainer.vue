@@ -1,7 +1,10 @@
 <template>
-  <div class="footer"> 
-
-  </div>
+  <footer id="footer"> 
+	<div class="center">
+        <img class="github-logo" v-on:click="githubrepo" alt="github website logo" src="../assets/github-logo.svg"/>
+        <img class="github-logo" v-on:click="linkedin" alt="linkedin website logo" src="../assets/linkedin-logo.svg"/>
+	</div>
+  </footer>
 </template>
 
 <script>
@@ -17,8 +20,22 @@ export default {
 	  }
   }
 }
-
 </script>
 <style>
-
+#footer {
+    background-color: #9db6c9;
+	position:relative;
+	height:100px;
+	margin-top:-100px;
+	clear:both
+}
+.center{
+	text-align: center;
+  	width: 50%;
+  	margin: 0 auto;   
+}
+.github-logo{
+	height:50px;
+	width:50px;
+}
 </style>
