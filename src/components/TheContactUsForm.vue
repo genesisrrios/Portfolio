@@ -7,20 +7,16 @@
   <div>
     <form v-on:keyup.enter="sendEmail">
       <div class="row">
-      <h2>{{$t("Contactme.name")}} </h2>
-      <input type="text" name="name" v-model="name" require>
+      <label for="name">{{$t("Contactme.name")}}<input type="text" id="name" name="name" v-model="name" require></label>
       </div>
       <div class="row">
-      <h2>{{$t("Contactme.phone")}} </h2>
-      <input type="phone" name="phone" v-model="phone"> 
+      <label for="phone">{{$t("Contactme.phone")}}<input type="phone" id="phone" name="phone" v-model="phone"></label>
       </div>
       <div class="row">
-        <h2>{{$t("Contactme.email")}}</h2>
-      <input type="email" name="email" v-model="email" require>           
+        <label for="email">{{$t("Contactme.email")}}<input id="phone" type="email" name="email" v-model="email" require></label>
       </div>
       <div class="row">
-        <h2>{{$t("Contactme.note")}}</h2>
-      <input type="text" name="note" v-model="note">      
+        <label for="note">{{$t("Contactme.note")}}<input type="text" id="note" name="note" v-model="note"></label>      
       </div>
     </form>
     <button class="btn" v-on:click="sendEmail">{{$t("Contactme.send")}}</button>
@@ -67,8 +63,10 @@ export default {
 h1{
   color:#305d8a;
 }
-h2{
+label{
+  font-size:2rem;
   color:#305d8a;
+  width:100%;
 }
 input{
   width: 100%;

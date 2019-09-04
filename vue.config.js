@@ -10,6 +10,7 @@ module.exports = {
       localeDir: 'locales',
       enableInSFC: true
     },
+    mode: 'production',
     configureWebPack:{
       plugins:[
         new PrerenderSPAPlugin({
