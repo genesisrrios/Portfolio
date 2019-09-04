@@ -1,40 +1,46 @@
 <template>
-  <div class="container">
-    <section>
+  <section class="container">
     <div class="row">
       <div class="column">
-      <div class=" box rounded-borders">
-        <img class="github-logo" src="../assets/github-logo.svg"/>
+      <div class=" box rounded-borders ">
+      <div class="center">
+        <img class="github-logo" alt="github website logo" src="../assets/github-logo.svg"/>
         <div class="box-content rounded-borders">
+        </div>
         </div>
         </div>
       </div>
       <div class="column">
       <div class="box rounded-borders">
-        <img class="github-logo" src="../assets/github-logo.svg"/>
+      <div class="center">
+        <img class="github-logo" alt="github website logo" src="../assets/github-logo.svg"/>
         <div class="box-content rounded-borders"> 
         </div>
       </div>
+      </div>      
       </div>
     </div>
     <div class="row">
       <div class="column">
     <div class="box rounded-borders">
-        <img class="github-logo" src="../assets/github-logo.svg"/>
+      <div class="center">    
+        <img class="github-logo" alt="github website logo" src="../assets/github-logo.svg"/>
         <div class="box-content rounded-borders">
     </div>
         </div>
       </div>
+      </div>      
       <div class="column">
       <div class="box rounded-borders">
-        <img class="github-logo" src="../assets/github-logo.svg"/>        
+      <div class="center">    
+        <img class="github-logo" alt="github website logo" src="../assets/github-logo.svg"/>        
         <div class="box-content rounded-borders">
         </div>
         </div>
+        </div>        
       </div>         
       </div> 
-    </section>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -61,32 +67,36 @@ display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;  flex-direction: column;
-  flex-basis: 100%;
-  flex: 2;
+  flex: 1;
   align-items: center;     /* center items horizontally, in this case */  
 }
 .box{
   background:#afddb5;
-  margin:15px;
   width: 450px;
   height:450px;
   text-align: center;
+  margin:16px auto;
 }
-.box-content{
+/* .box-content{
   background-color: white;
   padding:10px;
   width: 85%;
   height:85%;
   margin:0 auto;
-}
+} */
 .rounded-borders{
   border-radius: 10px;
-  border: 2px solid #afddb5;
-  padding: 3px 10px 3px 10px;
+  padding: 10px;
 }
 .github-logo{
-  height: 40px;
-  width: 40px;
+  height: 30%;
+  width: 30%;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 .github-logo:hover, .github-logo:active{  
   filter: invert(10%) sepia(2%) saturate(2878%) hue-rotate(6deg) brightness(57%) contrast(97%);
@@ -104,12 +114,12 @@ display: -webkit-box;
   height:335px;
   flex-grow: 1;
 }
-.box-content{
+/* .box-content{
   background-color: white;
   padding:10px;
   width: 80%;
   height:80%;
   margin:0 auto;
-}
+} */
 }
 </style>

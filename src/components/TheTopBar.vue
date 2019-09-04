@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <header>
             <!-- The hamburger class is used to draw three lines -->      
      <div class="hamburger" v-on:click="openResponsiveMenu">
@@ -10,22 +10,24 @@
         <img v-if="language_english" class="image-mobile" alt="Name of the author of the website" src="../assets/name-logo-english.svg"/>
         <img v-else class="image-mobile" alt="Name of the author of the website" src="../assets/name-logo-spanish.svg"/>
       <ul class="header-links">
-        <li v-if="language_english"><img class="image-desktop" alt="Name of the author of the website" src="../assets/name-logo-english.svg"/></li>
-        <li v-else><img class="image-desktop" alt="Name of the author of the website" src="../assets/name-logo-spanish.svg"/></li>
+        <li v-if="language_english" class="li-img"><img class="image-desktop" alt="Name of the author of the website" src="../assets/name-logo-english.svg"/></li>
+        <li v-else class="li-img"><img class="image-desktop" alt="Name of the author of the website" src="../assets/name-logo-spanish.svg"/></li>
         <li class="header-items btn">
           <a class="header-items btn language-btn" v-on:click="setLocale('en')" id="en">en</a> 
           <span class="dot-en"></span>
           <a class="header-items btn language-btn" v-on:click="setLocale('es')" id="es">es</a>
           <span class="dot-es"></span>          
-        </li>        
+        </li>    
+        <div class="header-links-right">
         <li class="header-items btn"><a href="#about">{{ $t("SideBar.about") }}</a></li>        
         <li class="header-items btn"><a href="#experience">{{ $t("SideBar.experience") }}</a></li>
         <li class="header-items btn"><a href="#projects">{{ $t("SideBar.projects") }}</a></li>        
         <li class="header-items btn"><a href="#technologies">{{ $t("SideBar.technologies") }}</a></li>
         <li class="header-items btn"><a href="#contactme">{{ $t("SideBar.contactme") }}</a></li>                
+        </div>    
       </ul>
     </header>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -42,8 +44,6 @@ export default {
     checkWhichLanguage(language){
       const enTag = document.getElementById("en");
       const esTag = document.getElementById("es");
-      // const dot_es = document.getElementsByClassName('dot-es')[0];
-      // const dot_en = document.getElementsByClassName('dot-en')[0];      
       switch(language){
           case "es":          
             this.language_english = false;
@@ -78,7 +78,9 @@ export default {
     },
     openResponsiveMenu(){
       const headerLinks = document.querySelector(".header-links");
+      const headerLinksRight = document.querySelector(".header-links-right");
       headerLinks.classList.toggle('active');
+      headerLinksRight.classList.toggle('active');
     }
   },
   mounted(){
@@ -104,9 +106,6 @@ a{
   color:white;
   text-decoration: none;
 }
-a:hover{
-  font-size: 20px;
-}
 .header-links li{
   padding:15px 5px;
   white-space: nowrap;
@@ -122,7 +121,7 @@ a:hover{
   -ms-flex-align:center;
           align-items:center;
 }
-li:first-child{
+.li-img{
   height: 67px;
   width: 230px;
 }
@@ -136,6 +135,20 @@ li:first-child{
 .language-btn{
   padding:20px;
   cursor: pointer;
+}
+.language-btn:hover{
+    color: #305d8a;
+}
+.header-links-right{
+  display:flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-box-align:center;
+  -ms-flex-align:center;
+          align-items:center;          
+}
+.header-links-right a:hover{
+  color: #305d8a;
 }
 @media only screen and (max-width: 1280px) {
  .line{
@@ -171,10 +184,27 @@ li:first-child{
 .header-links.active{
   display:block;
 }
+.header-links-right.active{
+  display:block;
+}
 .image-desktop{
   display:none;
 }
-
+.header-links-right{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
+  align-items:center;
+  height: 100vh;
+  display: none;  
+}
 .header-links li{
   padding:40px 5px;
 }

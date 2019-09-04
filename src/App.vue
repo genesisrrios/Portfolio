@@ -49,6 +49,7 @@ body {
     font-family: 'Indie Flower', cursive;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Sansita', sans-serif;
+    color:#f2f2f2 ;
 }
 a{
   font-family: 'Sansita', sans-serif;

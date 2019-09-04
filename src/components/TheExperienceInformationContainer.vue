@@ -1,6 +1,5 @@
 <template>
-    <div class="container">
-      <section>
+    <section class="container">
       <div class="timeline">
         <ul>
           <li class="row-left">
@@ -41,7 +40,6 @@
         </ul>
       </div>
       </section>
-  </div>    
 </template>
 
 <script>
@@ -130,12 +128,12 @@ ul li{
 .rounded-borders{
   border-radius: 15px;
   border: 2px solid #afddb5;
-  background:#afddb5;
+  background: #afddb5;
   padding: 3px 10px 3px 10px;   
 }
 @media only screen and (max-width: 1280px) {
 .container{
-  height:135vh;
+  height:140vh;
   width: 100vw;
 }
 ul li{
