@@ -57,7 +57,7 @@ export default {
 </script>
 <style scoped>
 .container{
-  height:90vh;
+  height:110vh;
   width: 100vw;  
 }
 h1{

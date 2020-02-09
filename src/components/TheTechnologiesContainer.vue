@@ -136,4 +136,10 @@ display: -webkit-box;
   width: 100vw;
 }    
 }
+@media only screen and (max-width: 900px) {
+  .container{
+    height: 310vh;
+    width: 100vw;
+  }
+}
 </style>

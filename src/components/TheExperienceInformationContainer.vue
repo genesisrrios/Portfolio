@@ -60,7 +60,7 @@ export default {
 .row-left{
   display:-webkit-box;  
   display:-ms-flexbox;  
-  display:flex;
+  flex-wrap: wrap;
   }
 .row-right{
   display:-webkit-box;
@@ -183,5 +183,11 @@ ul li{
   -ms-flex-pack: center;
           justify-content: center;
 }
+}
+@media only screen and (max-width: 900px) {
+  .container{
+    height: 170vh;
+    width: 100vw;
+  }
 }
 </style>

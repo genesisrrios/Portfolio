@@ -8,8 +8,10 @@
       <div class=" box rounded-borders ">
       <div class="center">
         <img class="github-logo" alt="github website logo" src="../assets/github-logo.svg"/>
-        <div class="box-content rounded-borders">
+        <div class="rounded-borders">
         </div>
+          <canvas id="snake-game" style="width:450px;height:450px;background-color: black;">
+          </canvas>
         </div>
         </div>
       </div>
@@ -50,6 +52,9 @@
 export default {
   name: "TheProjectsContainer"
 };
+var canvas = document.getElementById('snake-game');
+const context = canvas.getContext('2d');
+
 </script>
 <style scoped>
 .container{
@@ -115,5 +120,11 @@ display: -webkit-box;
   height:335px;
   flex-grow: 1;
 }
+}
+@media only screen and (max-width: 900px) {
+  .container{
+    height: 210vh;
+    width: 100vw;
+  }
 }
 </style>
