@@ -8,6 +8,7 @@
       <div class=" box rounded-borders ">
       <div class="center">
         <div class="box-content rounded-borders">
+         <img width="1000" src="/src/assets/c-sharp-logo.svg" alt="C# Programming Language Logo">
         </div>
         </div>
         </div>
@@ -98,15 +99,6 @@ display: -webkit-box;
   border-radius: 10px;
   padding: 10px;
 }
-.github-logo{
-  height: 30%;
-  width: 30%;
-}
-
-.github-logo:hover, .github-logo:active{  
-  filter: invert(10%) sepia(2%) saturate(2878%) hue-rotate(6deg) brightness(57%) contrast(97%);
-  cursor: pointer;
- }
 @media only screen and (max-width: 1071px) {
 .container{
   height: 200vh;
