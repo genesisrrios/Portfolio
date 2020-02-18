@@ -31,10 +31,9 @@ app.get('/contactme',(parameters) => {
 		}else{
 		}
 		transporter.close(); 
-	});	
+	});
 });
-app.use(compression())
+app.use(compression());
 app.use('/', serverStatic(path.join(__dirname, '/dist')));
-
-const port = 8000
-app.listen(port);
+app.listen(8000);
+console.log("Test");
