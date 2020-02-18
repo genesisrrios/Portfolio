@@ -47,7 +47,7 @@ export default {
         phone:this.phone, 
         note:this.note
       };
-      axios.get('/contactme',parameters, function(){
+      axios.get('/api/contactme',parameters, function(){
       }).catch(function(){
       });
       //this.showOptionalFieldMessage(this.email, this.name, this.phone)
