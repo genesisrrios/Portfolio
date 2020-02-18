@@ -17,7 +17,7 @@ var transporter = nodemailer.createTransport({
 	}
 });
 
-app.get('/contactme',(parameters) => {
+app.get('/api/contactme',(parameters) => {
 	const mailOptions = {
 		from: 'genesisrriosweb@gmail.com',
 		to: 'genesisrriosweb@gmail.com',
@@ -36,4 +36,3 @@ app.get('/contactme',(parameters) => {
 app.use(compression());
 app.use('/', serverStatic(path.join(__dirname, '/dist')));
 app.listen(8000);
-console.log("Test");
