@@ -50,7 +50,7 @@ export default {
       axios.get('/contactme',parameters, function(){
       }).catch(function(){
       });
-      // this.showOptionalFieldMessage(this.email, this.name, this.phone)
+      //this.showOptionalFieldMessage(this.email, this.name, this.phone)
     },
   }
 };

@@ -36,5 +36,5 @@ app.get('/contactme',(parameters) => {
 app.use(compression())
 app.use('/', serverStatic(path.join(__dirname, '/dist')));
 
-const port = process.env.PORT || 8000
+const port = 8000
 app.listen(port);
