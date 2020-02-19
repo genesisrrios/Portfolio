@@ -1,40 +1,34 @@
-const compression = require('compression');
 const express = require('express');
-const serverStatic = require('serve-static');
-const path = require('path');
 const nodemailer = require('nodemailer');
 const app = express();
 
-var transporter = nodemailer.createTransport({
-	service:'gmail',
-	host: 'smtp.gmail.com',	
+const transporter = nodemailer.createTransport({
+    host: 'smtp.ethereal.email',
     port: 587,
-    secure: false,
-    requireTLS: true,	
-	auth:{
-		user:'genesisrriosweb@gmail.com',
-		pass:'Tr@um2180'
-	}
+    auth: {
+        user: 'tia.collins6@ethereal.email',
+        pass: 'fedXC2VbWsV5rZhKx6'
+    }
 });
-app.get('/api', (req, res) => {
-	res.send('Hi! Server is listening on port ');
-});
-app.get('/api/contactme',(parameters) => {
+app.get('/api/contactme',(req, res) => {
 	const mailOptions = {
-		from: 'genesisrriosweb@gmail.com',
+		from: 'tia.collins6@ethereal.email',
 		to: 'genesisrriosweb@gmail.com',
-		subject: 'Cliente ' + parameters.query.name,
-		html: '<p>Nombre: ' + parameters.query.name + '</p>' + 
-		'<p>Email: ' + parameters.query.email + '</p> ' + ' <p>Telefono: ' +
-		parameters.query.phone + ' </p> ' + ' <p>Nota: ' + parameters.query.note + '</p>'
+		subject: 'Cliente ' + req.query.email,
+		html: '<p>Nombre: ' + req.query.name + '</p>' + 
+		'<p>Email: ' + req.query.email + '</p> ' + ' <p>Telefono: ' +
+		req.query.phone + ' </p> ' + ' <p>Nota: ' + req.query.note + '</p>'
 	};	
 	transporter.sendMail(mailOptions, function(error, response){
 		if(error){
+			res.send(error)
 		}else{
+			res.send(JSON.stringify({
+				"response": "Email sent",
+				"responseCode": 1,
+			}));
 		}
 		transporter.close(); 
 	});
 });
-// app.use(compression());
-// app.use('/', serverStatic(path.join(__dirname, '/dist')));
 app.listen(8000);

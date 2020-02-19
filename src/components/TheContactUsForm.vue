@@ -40,17 +40,14 @@ export default {
   },
   methods:{
     sendEmail: function(){
-      var parameters = 
-      {
-        email:this.email, 
-        name:this.name, 
-        phone:this.phone, 
-        note:this.note
-      };
-      axios.get('/api/contactme',parameters, function(){
+      const config = {
+         headers: {'Access-Control-Allow-Origin': '*'}
+      };      
+      axios.get('/api/contactme?name=' + this.name + '&phone=' + this.phone + '&note=' + '&email=' + this.email,config,
+      function(){        
       }).catch(function(){
       });
-      //this.showOptionalFieldMessage(this.email, this.name, this.phone)
+      // this.showOptionalFieldMessage(this.email, this.name, this.phone);
     },
   }
 };
