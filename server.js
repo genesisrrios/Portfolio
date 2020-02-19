@@ -16,7 +16,9 @@ var transporter = nodemailer.createTransport({
 		pass:'Tr@um2180'
 	}
 });
-
+app.get('/api', (req, res) => {
+	res.send('Hi! Server is listening on port ');
+});
 app.get('/api/contactme',(parameters) => {
 	const mailOptions = {
 		from: 'genesisrriosweb@gmail.com',
