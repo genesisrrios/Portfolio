@@ -17,7 +17,7 @@ var transporter = nodemailer.createTransport({
 	}
 });
 
-app.get('/',(parameters) => {
+app.get('/api/contactme',(parameters) => {
 	const mailOptions = {
 		from: 'genesisrriosweb@gmail.com',
 		to: 'genesisrriosweb@gmail.com',
