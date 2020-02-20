@@ -1,47 +1,47 @@
 <template>
-    <section class="container">
-    <div class="center-tittle">
-    <h1 class="tittle">{{$t("Experience.tittle")}}</h1>
-    </div>
-      <div class="timeline">
-        <ul>
-          <li class="row-left">
-              <div class="card">
-              <h2 class="rounded-borders center">2019</h2>
-              <p>{{$t("Experience.first")}}</p>
-              </div>
-          </li>
-          <li class="row-right">
-                <div class="card">
-              <h2 class="rounded-borders center" >2018</h2>
-              <p>
-                {{$t("Experience.second")}}
-              </p>
-              <br/>
-              <p>
-                {{$t("Experience.third")}}     
-              </p>
-              <p>
-                <br/>
-                {{$t("Experience.fourth")}}
-                <span class="tool-tip">
-                  {{$t("Experience.fifth")}}  
-                <span class="tool-tip-text">
-                {{$t("Experience.sixth")}}
-                </span>
-                </span>
-                {{$t("Experience.seventh")}}
-              </p>
-            </div>
-            </li>
-            <li class="row-left">
-              <div class="card">
-              <h2 class="rounded-borders center">2015</h2>
-              <p>{{$t("Experience.eight")}}</p>
-            </div>
-            </li>
-        </ul>
+    <section class="container">    
+      <div class="center-tittle ">
+      <h1 class="tittle">{{$t("Experience.tittle")}}</h1>
       </div>
+        <div class="timeline">
+          <ul>
+            <li class="row-left">
+                <div class="card">
+                <h2 class="rounded-borders center">2019</h2>
+                <p>{{$t("Experience.first")}}</p>
+                </div>
+            </li>
+            <li class="row-right">
+                  <div class="card">
+                <h2 class="rounded-borders center" >2018</h2>
+                <p>
+                  {{$t("Experience.second")}}
+                </p>
+                <br/>
+                <p>
+                  {{$t("Experience.third")}}     
+                </p>
+                <p>
+                  <br/>
+                  {{$t("Experience.fourth")}}
+                  <span class="tool-tip">
+                    {{$t("Experience.fifth")}}  
+                  <span class="tool-tip-text">
+                  {{$t("Experience.sixth")}}
+                  </span>
+                  </span>
+                  {{$t("Experience.seventh")}}
+                </p>
+              </div>
+              </li>
+              <li class="row-left">
+                <div class="card">
+                <h2 class="rounded-borders center">2015</h2>
+                <p>{{$t("Experience.eight")}}</p>
+              </div>
+              </li>
+          </ul>
+      </div>  
       </section>
 </template>
 
@@ -189,5 +189,17 @@ ul li{
     height: 170vh;
     width: 100vw;
   }
+}
+@media only screen and (max-width: 375px) {
+  .container{
+    height: 210vh;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 1280px) and (min-width: 800px),(max-width: 1024px) and (min-width: 768px){
+  .container{
+  height:90vh;
+  width: 100vw;
+}
 }
 </style>

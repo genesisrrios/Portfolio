@@ -1,9 +1,7 @@
 <template>
   <section class="container">
   <div class="center">
-  <div class="center-tittle">
   <h1 class="tittle tittle-custom">{{$t("Contactme.tittle")}}</h1>
-  </div>
   <div>
     <form v-on:keyup.enter="sendEmail">
       <div class="row">
@@ -92,5 +90,23 @@ input{
 }
 .tittle-custom{
   margin-bottom:60px;
+}
+@media only screen and (max-width: 375px) {
+  .container{
+    height: 120vh;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 1280px) and (min-width: 800px),(max-width: 1024px) and (min-width: 768px){
+  .container{
+  height:60vh;
+  width: 100vw;
+}
+}
+@media screen and (max-width: 1280px) and (min-width: 888px){
+  .container{
+  height:70vh;
+  width: 100vw;
+}
 }
 </style>

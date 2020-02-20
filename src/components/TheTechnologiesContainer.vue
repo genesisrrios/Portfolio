@@ -134,4 +134,22 @@ display: -webkit-box;
     width: 100vw;
   }
 }
+@media only screen and (max-width: 375px) {
+  .container{
+    height: 350vh;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 1280px) and (min-width: 800px),(max-width: 1024px) and (min-width: 768px){
+  .container{
+  height:140vh;
+  width: 100vw;
+}
+}
+@media screen and (max-width: 1280px) and (min-width: 888px){
+  .container{
+  height:110vh;
+  width: 100vw;
+}
+}
 </style>

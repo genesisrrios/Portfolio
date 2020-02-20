@@ -1,10 +1,12 @@
 <template>
-  <footer id="footer"> 
-	<div class="center">
-        <img class="github-logo" v-on:click="githubrepo" alt="github website logo" src="../assets/github-logo.svg"/>
-        <img class="github-logo" v-on:click="linkedin" alt="linkedin website logo" src="../assets/linkedin-logo.svg"/>
-	</div>
-  </footer>
+  <div class="footer-container">
+	<footer id="footer center"> 
+		<div class="center">
+			<img class="logos" v-on:click="githubrepo" alt="github website logo" src="../assets/github-logo.svg"/>
+			<img class="logos" v-on:click="linkedin" alt="linkedin website logo" src="../assets/linkedin-logo.svg"/>
+		</div>
+	</footer>
+   </div>
 </template>
 
 <script>
@@ -22,20 +24,19 @@ export default {
 }
 </script>
 <style>
+.footer-container{
+	height:50px;
+	width:100%;
+	background-color:#9db6c9;
+}
 #footer {
-    background-color: #9db6c9;
-	position:relative;
-	height:100px;
-	margin-top:-100px;
-	clear:both
+	position:absolute;
 }
-.center{
-	text-align: center;
-  	width: 50%;
-  	margin: 0 auto;   
-}
-.github-logo{
+.logos{
 	height:50px;
 	width:50px;
+}
+.center{
+	text-align:center;
 }
 </style>

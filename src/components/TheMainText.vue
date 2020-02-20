@@ -1,5 +1,4 @@
 <template>
-  <div id="app">
     <section>
       <div class="container">
         <div class="main-content">
@@ -8,7 +7,6 @@
           </div>
         </div>
       </section>
-    </div>
 </template>
 
 <script>
@@ -30,25 +28,25 @@ div .main-content{
   width:55%;
   padding: 150px 0px 40px 0px;
   color:#305d8a;
-  font-size: 2em;  
-}
-h1{
   text-align: center;
+  font-size: 2em;  
 }
 .image{
   height: 150px;
 }
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 800px) {
  .main-text{
   width:100%;
-  font-size: 1.3em;
-}
-h1{
-  text-align: center;
-  font-size: 25spx;
+  font-size: 1.9em;
 }
 .image{
   height: 150px;
 } 
+}
+@media screen and (max-width: 1280px) and (min-width: 800px),(max-width: 1024px) and (min-width: 768px){
+  .container{
+    height:60vh;
+    width: 100vw;
+  }
 }
 </style>
