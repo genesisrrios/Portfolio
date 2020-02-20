@@ -140,4 +140,7 @@ display: -webkit-box;
   width: 100vw;
 }
 }
+@media (-moz-touch-enabled){
+    
+}  
 </style>
