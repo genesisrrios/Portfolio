@@ -43,5 +43,8 @@
   },
   "Projects": {
     "tittle": "Proyectos"
-  }
+  },
+  "Toast":{
+    "emailSent":"Correo enviado, me comunicare con usted pronto!"
+ }
 }

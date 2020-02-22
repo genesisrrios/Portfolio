@@ -20,29 +20,42 @@
     <button class="btn" v-on:click="sendEmail">{{$t("Contactme.send")}}</button>
     </div>
     </div>
+    <snackbar v-bind:show="showToast" v-bind:message="toastMessage"/>
   </section>
 </template>
 
 <script>
 const axios = require('axios');
+
 import { prototype } from 'events';
+
+import snackbar from './TheSnackBar';
+
 export default {
   name: "TheContactUsForm",
+  components:{
+    snackbar
+  },
   data:function(){
     return{
       email:'',
       name:'',
       phone:'',
-      note:''
+      note:'',
+      showToast:false,
+      toastMessage:'$t("Toast.emailSent")'
     }
   },
   methods:{
     sendEmail: function(){
+      var self = this;
       const config = {
          headers: {'Access-Control-Allow-Origin': '*'}
       };      
       axios.get('/api/contactme?name=' + this.name + '&phone=' + this.phone + '&note=' + '&email=' + this.email,config,
-      function(){        
+      function(){ 
+        self.showToast = true;
+
       }).catch(function(){
       });
       // this.showOptionalFieldMessage(this.email, this.name, this.phone);

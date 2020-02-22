@@ -18,6 +18,7 @@ import TheProjectsContainer from "./components/TheProjectsContainer";
 import TheContactUsForm from "./components/TheContactUsForm";
 import TheTechnologiesContainer from "./components/TheTechnologiesContainer";
 import TheFooterContainer from "./components/TheFooterContainer";
+import TheSnackBar from "./components/TheSnackBar";
 
 export default {
   name: "app",

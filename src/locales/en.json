@@ -43,5 +43,8 @@
    },
    "Projects": {
       "tittle": "Projects"
+   },
+   "Toast":{
+      "emailSent":"Email Sent, i'll be contacting you soon!"
    }
 }
