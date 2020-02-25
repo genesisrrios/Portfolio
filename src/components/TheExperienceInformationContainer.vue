@@ -53,27 +53,6 @@ export default {
 </script>
 
 <style scoped>
-.container{
-  height:120vh;
-  width: 100vw;
-}
-.row-left{
-  display:-webkit-box;  
-  display:-ms-flexbox;  
-  flex-wrap: wrap;
-  }
-.row-right{
-  display:-webkit-box;
-  display:-ms-flexbox;
-  display:flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-          justify-content: flex-end;
-  }
 p{
   font-size: 25px;
   color:#305d8a;
@@ -81,33 +60,6 @@ p{
 h2{
   display:inline-block;
   color:white;
-  
-}
-ul li{
-  list-style: none;
-}
-.card{
-  width: 40%;
-  height: 40%;
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;  
-}
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: #9db6c9;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
 }
 
 .tool-tip{
@@ -128,17 +80,14 @@ ul li{
 .tool-tip:hover .tool-tip-text{
   display: block;
 }
+
+@media screen and ( max-width: 1199px )
+{
 .rounded-borders{
   border-radius: 15px;
   border: 2px solid #305d8a;
   background: #305d8a;
   padding: 3px 10px 3px 10px;   
-}
-
-@media only screen and (max-width: 1280px) {
-.container{
-  height:140vh;
-  width: 100vw;
 }
 ul li{
   list-style: none;
@@ -184,21 +133,85 @@ ul li{
           justify-content: center;
 }
 }
-@media only screen and (max-width: 900px) {
-  .container{
-    height: 170vh;
-    width: 100vw;
-  }
+@media screen and ( min-width: 1200px )
+{
+  .rounded-borders{
+  border-radius: 15px;
+  border: 2px solid #305d8a;
+  background: #305d8a;
+  padding: 3px 10px 3px 10px;   
 }
-@media only screen and (max-width: 375px) {
-  .container{
-    height: 210vh;
-    width: 100vw;
+
+.row-left{
+  display:-webkit-box;  
+  display:-ms-flexbox;  
+  flex-wrap: wrap;
   }
+.row-right{
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+          justify-content: flex-end;
+  }
+
+ul li{
+  list-style: none;
 }
-@media screen and (max-width: 1280px) and (min-width: 800px),(max-width: 1024px) and (min-width: 768px){
-  .container{
-  height:90vh;
+.card{
+  width: 40%;
+  height: 40%;
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;  
+}
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #9db6c9;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+}
+@media screen and ( min-width: 320px )
+{
+.container{
+  height:150vh;
+  width: 100vw;
+}
+}
+@media screen and ( min-width: 480px )
+{
+.container{
+  height:150vh;
+  width: 100vw;
+}
+}
+@media screen and ( min-width: 768px )
+{
+.container{
+  height:115vh;
+  width: 100vw;
+}
+}
+@media screen and ( min-width: 992px )
+{
+.container{
+  height:115vh;
   width: 100vw;
 }
 }

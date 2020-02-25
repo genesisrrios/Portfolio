@@ -99,48 +99,4 @@ display: -webkit-box;
   filter: invert(10%) sepia(2%) saturate(2878%) hue-rotate(6deg) brightness(57%) contrast(97%);
   cursor: pointer;
  }
-@media only screen and (max-width: 1069px) {
-.container{
-  height:190vh;
-  width: 100vw;
-}
-.github-logo{
-  height:50px;
-  width: 50px;
-}
-.box{
-  background:#afddb5;
-  margin:15px;
-  width: 335px;
-  height:335px;
-  flex-grow: 1;
-}
-}
-@media only screen and (max-width: 900px) {
-  .container{
-    height: 210vh;
-    width: 100vw;
-  }
-}
-@media only screen and (max-width: 375px) {
-  .container{
-    height: 240vh;
-    width: 100vw;
-  }
-}
-@media screen and (max-width: 1280px) and (min-width: 800px),(max-width: 1024px) and (min-width: 768px){
-  .container{
-  height:90vh;
-  width: 100vw;
-}
-}
-@media screen and (max-width: 1280px) and (min-width: 888px){
-  .container{
-  height:140vh;
-  width: 100vw;
-}
-}
-@media (-moz-touch-enabled){
-    
-}  
 </style>
