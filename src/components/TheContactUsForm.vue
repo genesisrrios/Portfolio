@@ -54,12 +54,12 @@ export default {
       axios.get('/api/contactme?name=' + this.name + '&phone=' + this.phone + '&note=' + '&email=' + this.email, config)
       .then(function (response) {
         if(response.status === 200)
-          this.showToast = true;
+          self.showToast = true;
         else
-          this.showToast = false;
+          self.showToast = false;
       });
       // this.showOptionalFieldMessage(this.email, this.name, this.phone);
-      this.showToast = false;
+      self.showToast = false;
     },
   }
 };
