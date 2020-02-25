@@ -1,5 +1,5 @@
 <template>
-	<div id="snackbar">{{message}}</div> 
+	<div id="snackbar" v-if="show">{{message}}</div> 
 </template>
 <script>
 export default {
@@ -7,7 +7,6 @@ export default {
   props:['message','show'],
   data(){
 	  return{
-		  visible:false
 	  }
   },
   mounted:function(){
@@ -28,7 +27,7 @@ export default {
   visibility: hidden; /* Hidden by default. Visible on click */
   min-width: 250px; /* Set a default minimum width */
   margin-left: -125px; /* Divide value of min-width by 2 */
-  background-color: #333; /* Black background color */
+  background-color: #9db6c9; 
   color: #fff; /* White text color */
   text-align: center; /* Centered text */
   border-radius: 2px; /* Rounded borders */

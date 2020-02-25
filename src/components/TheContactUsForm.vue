@@ -20,7 +20,7 @@
     <button class="btn" v-on:click="sendEmail">{{$t("Contactme.send")}}</button>
     </div>
     </div>
-    <snackbar v-bind:show="showToast" v-bind:message="toastMessage"/>
+    <snackbar v-if="showToast"  v-bind:show="showToast" :message="$t('Toast.emailSent')"/>
   </section>
 </template>
 
@@ -42,8 +42,7 @@ export default {
       name:'',
       phone:'',
       note:'',
-      showToast:false,
-      toastMessage:'$t("Toast.emailSent")'
+      showToast:false
     }
   },
   methods:{
@@ -51,14 +50,16 @@ export default {
       var self = this;
       const config = {
          headers: {'Access-Control-Allow-Origin': '*'}
-      };      
-      axios.get('/api/contactme?name=' + this.name + '&phone=' + this.phone + '&note=' + '&email=' + this.email,config,
-      function(){ 
-        self.showToast = true;
-
-      }).catch(function(){
+      };
+      axios.get('/api/contactme?name=' + this.name + '&phone=' + this.phone + '&note=' + '&email=' + this.email, config)
+      .then(function (response) {
+        if(response.status === 200)
+          this.showToast = true;
+        else
+          this.showToast = false;
       });
       // this.showOptionalFieldMessage(this.email, this.name, this.phone);
+      this.showToast = false;
     },
   }
 };
