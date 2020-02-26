@@ -2,8 +2,8 @@
   <div class="footer-container">
 	<footer id="footer center"> 
 		<div class="center">
-			<img class="logos" v-on:click="openLink('https://github.com/genesisrrios')" alt="github website logo" src="../assets/github-logo.svg"/>
-			<img class="logos" v-on:click="openLink('https://www.linkedin.com/in/genesis-rivera-78898012a/')" alt="linkedin website logo" src="../assets/linkedin-logo.svg"/>
+			<img class="logos" v-on:click="openLink('https://github.com/genesisrrios')" alt="github website logo" src="../assets/Footer/github-logo.svg"/>
+			<img class="logos" v-on:click="openLink('https://www.linkedin.com/in/genesis-rivera-78898012a/')" alt="linkedin website logo" src="../assets/Footer/linkedin-logo.svg"/>
 		</div>
 	</footer>
    </div>

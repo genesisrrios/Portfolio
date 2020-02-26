@@ -7,11 +7,11 @@
         <div class="line"></div>
         <div class="line"></div>
         </div>            
-        <img v-if="language_english" class="image-mobile" alt="Name of the author of the website" src="../assets/name-logo-english.svg"/>
-        <img v-else class="image-mobile" alt="Name of the author of the website" src="../assets/name-logo-spanish.svg"/>
+        <img v-if="language_english" class="image-mobile" alt="Name of the author of the website" src="../assets/MyName/name-logo-english.svg"/>
+        <img v-else class="image-mobile" alt="Name of the author of the website" src="../assets/MyName/name-logo-spanish.svg"/>
       <ul class="header-links">
-        <li v-if="language_english" class="li-img"><img class="image-desktop" alt="Name of the author of the website" src="../assets/name-logo-english.svg"/></li>
-        <li v-else class="li-img"><img class="image-desktop" alt="Name of the author of the website" src="../assets/name-logo-spanish.svg"/></li>
+        <li v-if="language_english" class="li-img"><img class="image-desktop" alt="Name of the author of the website" src="../assets/MyName/name-logo-english.svg"/></li>
+        <li v-else class="li-img"><img class="image-desktop" alt="Name of the author of the website" src="../assets/MyName/name-logo-spanish.svg"/></li>
         <li class="header-items btn">
           <a class="header-items btn language-btn" v-on:click="setLocale('en')" id="en">en</a> 
           <span class="dot-en"></span>
