@@ -42,7 +42,12 @@
       "tittle": "Skills and technologies"
    },
    "Projects": {
-      "tittle": "Projects"
+      "tittle": "Projects", 
+      "goToProject":"Go to Project",
+      "firstProject":"This Portfolio",
+      "secondProject":"Education got hacked (Hackaton Project)",
+      "thirdProject":"Agrohack (Hackaton Project)",
+      "fourthProject":"IBM Call for code (Project Hackaton)"
    },
    "Toast":{
       "emailSent":"Email Sent, i'll be contacting you soon!"

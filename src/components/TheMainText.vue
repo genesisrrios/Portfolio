@@ -16,10 +16,10 @@ export default {
 </script>
 <style scoped>
 
-@media screen and ( min-width: 320px )
+@media screen and ( min-width: 300px )
 {
   .container{
-    height:100vh;
+    height:80vh;
     width: 100vw;
   }
   div .main-content{

@@ -187,11 +187,14 @@ ul li{
   margin-left: -3px;
 }
 }
-@media screen and ( min-width: 320px )
+@media screen and ( min-width: 300px )
 {
 .container{
   height:150vh;
   width: 100vw;
+}
+p{
+  text-align: center;
 }
 }
 @media screen and ( min-width: 480px )
@@ -200,6 +203,9 @@ ul li{
   height:150vh;
   width: 100vw;
 }
+p{
+  text-align: center;
+}
 }
 @media screen and ( min-width: 768px )
 {
@@ -207,12 +213,18 @@ ul li{
   height:115vh;
   width: 100vw;
 }
+p{
+  text-align: center;
+}
 }
 @media screen and ( min-width: 992px )
 {
 .container{
   height:115vh;
   width: 100vw;
+}
+p{
+  text-align: center;
 }
 }
 </style>

@@ -42,7 +42,12 @@
     "tittle": "Tecnologias y habilidades"
   },
   "Projects": {
-    "tittle": "Proyectos"
+    "tittle": "Proyectos",
+    "goToProject":"Ir al projecto",
+    "firstProject":"Este portafolio",
+    "secondProject":"La Educacion fue Hacked (Projecto de Hackaton)",
+    "thirdProject":"Agrohack (Projecto Hackaton)",
+    "fourthProject":"IBM Call for code (Projecto Hackaton)"
   },
   "Toast":{
     "emailSent":"Correo enviado, me comunicare con usted pronto!"

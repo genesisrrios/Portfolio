@@ -5,59 +5,67 @@
     </div>
     <div class="row">
       <div class="column">
-      <div class=" box rounded-borders ">
-      <div class="center">
-        <img class="github-logo" alt="github website logo" src="../assets/github-logo.svg"/>
-        <div class="rounded-borders">
-        </div>
-        </div>
+        <div class="box rounded-borders " v-on:click="openLink('Portfolio')">
+            <div class="rounded-borders">
+                <h3>{{$t("Projects.firstProject")}}</h3>
+                <div class="show-case-project"> 
+                  <img src="">
+                </div>
+            </div>
         </div>
       </div>
       <div class="column">
-      <div class="box rounded-borders">
-      <div class="center">
-        <img class="github-logo" alt="github website logo" src="../assets/github-logo.svg"/>
-        <div class="box-content rounded-borders"> 
+        <div class="box rounded-borders" v-on:click="openLink('EducationGotHacked')">
+            <div class="rounded-borders">
+                <h3>{{$t("Projects.secondProject")}}</h3>
+            </div>
         </div>
-      </div>
-      </div>      
       </div>
     </div>
     <div class="row">
       <div class="column">
-    <div class="box rounded-borders">
-      <div class="center">    
-        <img class="github-logo" alt="github website logo" src="../assets/github-logo.svg"/>
-        <div class="box-content rounded-borders">
-    </div>
+        <div class="box rounded-borders" v-on:click="openLink('AgroHack')">
+            <div class="rounded-borders">
+                <h3>{{$t("Projects.thirdProject")}}</h3>
+            </div>
         </div>
-      </div>
-      </div>      
+      </div>   
       <div class="column">
-      <div class="box rounded-borders">
-      <div class="center">    
-        <img class="github-logo" alt="github website logo" src="../assets/github-logo.svg"/>        
-        <div class="box-content rounded-borders">
+        <div class="box rounded-borders" v-on:click="openLink('IBM-Call-for-Code-Hackaton-')">
+            <div class="rounded-borders">
+                <h3>{{$t("Projects.fourthProject")}}</h3>
+            </div>
         </div>
-        </div>
-        </div>        
-      </div>         
-      </div> 
+      </div>        
+    </div> 
   </section>
 </template>
 
 <script>
 export default {
-  name: "TheProjectsContainer"
+    name: "TheProjectsContainer",
+    methods:{
+      openLink:function(url){
+        window.open('https://github.com/genesisrrios/'+url);
+    }
+  }	  
 };
 </script>
 <style scoped>
+ .box:hover, .box:active{
+   background: #305d8a;
+ }
+ @media screen and ( min-width: 300px ) and (max-width:991px)
+{
+.show-case-project{
+  visibility: hidden;
+}
 .container{
-  height:130vh;
+  height:70vh;
   width: 100vw;
 }
 .row{
-display: -webkit-box;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
@@ -75,28 +83,49 @@ display: -webkit-box;
   align-items: center;  
 }
 .box{
-  background:#afddb5;
-  width: 450px;
-  height:450px;
+  background:#9db6c9;
+  width: 290px;
+  height:70px;
   text-align: center;
-  margin:16px auto;
 }
 .rounded-borders{
   border-radius: 10px;
-  padding: 10px;
 }
-.github-logo{
-  height: 30%;
-  width: 30%;
+
 }
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+@media screen and ( min-width: 992px )
+{
+.container{
+  height:210vh;
+  width: 100vw;
 }
-.github-logo:hover, .github-logo:active{  
-  filter: invert(10%) sepia(2%) saturate(2878%) hue-rotate(6deg) brightness(57%) contrast(97%);
-  cursor: pointer;
- }
+.row{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;  flex-direction: row;
+  flex-wrap:wrap;
+  width:100%;
+}
+.column {
+display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;  flex-direction: column;
+  flex: 1;
+  align-items: center;  
+}
+.box{
+  background:#9db6c9;
+  width: 900px;
+  height:300px;
+  text-align: center;
+}
+.rounded-borders{
+  border-radius: 10px;
+}
+}
+
 </style>

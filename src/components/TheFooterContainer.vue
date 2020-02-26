@@ -2,8 +2,8 @@
   <div class="footer-container">
 	<footer id="footer center"> 
 		<div class="center">
-			<img class="logos" v-on:click="githubrepo" alt="github website logo" src="../assets/github-logo.svg"/>
-			<img class="logos" v-on:click="linkedin" alt="linkedin website logo" src="../assets/linkedin-logo.svg"/>
+			<img class="logos" v-on:click="openLink('https://github.com/genesisrrios')" alt="github website logo" src="../assets/github-logo.svg"/>
+			<img class="logos" v-on:click="openLink('https://www.linkedin.com/in/genesis-rivera-78898012a/')" alt="linkedin website logo" src="../assets/linkedin-logo.svg"/>
 		</div>
 	</footer>
    </div>
@@ -14,12 +14,9 @@
 export default {
   name: "TheFooterContainer",
   methods:{
-	  githubrepo:function(){
-		  window.open("https://github.com/genesisrrios");
-	  },
-	  linkedin:function(){
-		  window.open("https://www.linkedin.com/in/genesis-rivera-78898012a/");
-	  }
+    openLink:function(url){
+		  window.open(url);
+	},	  
   }
 }
 </script>
