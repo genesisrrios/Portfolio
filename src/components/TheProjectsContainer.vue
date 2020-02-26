@@ -54,6 +54,7 @@ export default {
 <style scoped>
  .box:hover, .box:active{
    background: #305d8a;
+   cursor: pointer;
  }
  @media screen and ( min-width: 300px ) and (max-width:991px)
 {
