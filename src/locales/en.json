@@ -27,16 +27,7 @@
       "phone": "Phone number",
       "note": "Note (optional)",
       "send": "Send",
-      "messageSent": "Thank you for communicating with me, i'll be contacting you soon!",
-      "great": "perfect",
-      "requiredFields": "Please enter information on all required fields",
-      "talkToMe1": "Feel free to talk to me, ",
-      "talkToMe2": "I am always open to ",
-      "talkToMe3": "discussing new project ideas!",
-      "aboutQuestions": "Some of the questions i'll be asking are:",
-      "question1": "What type of business is the website for?",
-      "question2": "Any special requirements you might have.",
-      "question3": "Any specific deadline?"
+      "messageSent": "Thank you for communicating with me, i'll be contacting you soon!"
    },
    "Technologies": {
       "tittle": "Skills and technologies"
@@ -45,9 +36,13 @@
       "tittle": "Projects", 
       "goToProject":"Go to Project",
       "firstProject":"This Portfolio",
+      "firstProjectDescription":"My personal portfolio which I built using Vue.js, html, css and javascript. No css frameworks where used.",
       "secondProject":"Education got hacked (Hackaton Project)",
+      "secondProjectDescription":"Intel launched a hackaton which was focused on building software to empower students to learn using technology.\nMe and a team of three more people decided to build a web app which featured different learning categories for all the different school years of students \nthe idea was to help students learn better and make it fun along the way using games and interactive learning. The project was still in a very early development phase but the concept was there.",
       "thirdProject":"Agrohack (Hackaton Project)",
-      "fourthProject":"IBM Call for code (Project Hackaton)"
+      "thirdProjectDescription":"Cobian Media launched a Hackaton focused on building Agricultural technology solutions, so me and another person built weather station using a raspberry pi version 3 \nusing ultra violet light, humidity and soil sensors.",
+      "fourthProject":"IBM Call for code (Project Hackaton)",
+      "fourthProjectDescription":"IBM launched a Hackaton focused on building solutions for when disaster strikes. Me and another person built a very early version of a mesh network using arduinos and raspberry pis 3."
    },
    "Toast":{
       "emailSent":"Email Sent, i'll be contacting you soon!"

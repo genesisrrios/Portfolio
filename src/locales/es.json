@@ -45,9 +45,13 @@
     "tittle": "Proyectos",
     "goToProject":"Ir al projecto",
     "firstProject":"Portafolio",
+    "firstProjectDescription":"Mi portafolio personal que construí usando Vue.js, html, css y javascript. No hay 'Frameworks' de CSS.",
     "secondProject":"La Educacion fue Hacked (Projecto de Hackaton)",
+    "secondProjectDescription":"Intel lanzó un hackaton que se centró en la creación de software para capacitar a los estudiantes a aprender usando la tecnología. \nYo junto a un equipo de tres personas decidimos crear una aplicación web que presentara diferentes categorías de aprendizaje para todos los diferentes años escolares de los estudiantes \nla idea fue para ayudar a los estudiantes a aprender mejor y hacer que sea divertido usando juegos y aprendizaje interactivo. El proyecto todavía estaba en una fase de desarrollo muy temprana, pero el concepto estaba allí.",
     "thirdProject":"Agrohack (Projecto Hackaton)",
-    "fourthProject":"IBM Call for code (Projecto Hackaton)"
+    "thirdProjectDescription":"Cobian Media lanzó un Hackaton enfocado en la creación de soluciones de tecnología agrícola, por lo que yo y otra persona construimos una estación meteorológica utilizando una versión de raspberry pi 3 \nutilizando sensores de luz ultravioleta, humedad y suelo.",      
+    "fourthProject":"IBM Call for code (Projecto Hackaton)",
+    "fourthProjectDescription":"IBM lanzo un Hackaton enfocado en construir soluciones para reducir el impacto de desastres naturales. Yo y otro desarollador construimos una versión bastante temprana de una red mesh utilizando raspberry pis 3 y arduinos ."
   },
   "Toast":{
     "emailSent":"Correo enviado, me comunicare con usted pronto!"

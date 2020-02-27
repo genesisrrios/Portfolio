@@ -36,5 +36,9 @@ export default {
 .center{
 	text-align:center;
 }
+@media (-moz-touch-enabled){
+	.logos{
+		visibility: hidden;
+	}}   
 
 </style>
