@@ -9,7 +9,7 @@
             <div class="rounded-borders">
                 <h3>{{$t("Projects.firstProject")}}</h3>
                 <div class="show-case-project"> 
-                  <img src="">
+                  <img alt="Porfolio image" src="/src/assets/Projects/Portfolio_1.PNG"/>
                 </div>
             </div>
         </div>
