@@ -20,5 +20,23 @@ module.exports = {
         })
       ]
     },
+    module:{
+      rules:[
+        {
+          test: /\.(png|svg|jpe?g|gif)$/,
+          include: /images/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[name].[ext]',
+                outputPath: '/src/assets/',
+                publicPath: '/src/assets/'
+              }
+            }
+          ]
+        },
+      ]
+    }
   }
 }

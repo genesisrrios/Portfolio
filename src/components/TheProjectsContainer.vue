@@ -8,8 +8,8 @@
         <div class="box rounded-borders " v-on:click="openLink('Portfolio')">
             <div class="rounded-borders">
                 <h3>{{$t("Projects.firstProject")}}</h3>
-                <div class="show-case-project"> 
-                  <img alt="Porfolio image" src="/src/assets/Projects/Portfolio_1.PNG"/>
+                <div> 
+                  <img class="show-case-project-images" alt="Porfolio image" src="../assets/Projects/Portfolio_1.png"/>
                 </div>
             </div>
         </div>
@@ -126,6 +126,9 @@ display: -webkit-box;
 }
 .rounded-borders{
   border-radius: 10px;
+}
+.show-case-project-images{
+  height: 200px;
 }
 }
 

@@ -7,13 +7,14 @@
     "build": "vue-cli-service build",
     "i18n:report": "vue-cli-service i18n:report --src './src/**/*.?(js|vue)' --locales './src/locales/**/*.json'",
     "start": "node server.js",
-    "debug":"node --inspect ./node_modules/@vue/cli-service/bin/vue-cli-service.js serve"
+    "debug": "node --inspect ./node_modules/@vue/cli-service/bin/vue-cli-service.js serve"
   },
   "dependencies": {
     "axios": "^0.19.0",
     "compression": "^1.7.4",
     "core-js": "^2.6.5",
     "express": "^4.17.1",
+    "file-loader": "^5.1.0",
     "nodemailer": "^6.3.0",
     "prerender-spa-plugin": "^3.4.0",
     "vue": "^2.6.10",

@@ -140,6 +140,7 @@ ul li{
   border: 2px solid #305d8a;
   background: #305d8a;
   padding: 3px 10px 3px 10px;   
+  
 }
 
 .row-left{
@@ -170,6 +171,7 @@ ul li{
   position: relative;
   background-color: inherit;
   width: 50%;  
+  text-align:center;
 }
 .timeline {
   position: relative;
