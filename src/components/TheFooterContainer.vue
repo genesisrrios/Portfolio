@@ -32,6 +32,7 @@ export default {
 .logos{
 	height:50px;
 	width:50px;
+	cursor: pointer;
 }
 .center{
 	text-align:center;
