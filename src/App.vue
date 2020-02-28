@@ -4,9 +4,7 @@
     <TheMainText id="about"/>    
     <TheExperienceInformationContainer id="experience" />
     <TheProjectsContainer id="projects"/>
-    <!-- <TheTechnologiesContainer id="technologies"/>  -->
-    <TheContactUsForm id="contactme"/>
-    <TheFooterContainer/>    
+    <TheContactUsForm id="contactme"/>    
     </div>
 </template>
 
@@ -16,21 +14,17 @@ import TheExperienceInformationContainer from "./components/TheExperienceInforma
 import TheMainText from "./components/TheMainText";
 import TheProjectsContainer from "./components/TheProjectsContainer";
 import TheContactUsForm from "./components/TheContactUsForm";
-// import TheTechnologiesContainer from "./components/TheTechnologiesContainer";
-import TheFooterContainer from "./components/TheFooterContainer";
 import TheSnackBar from "./components/TheSnackBar";
 
 export default {
   name: "app",
   components: { 
-    TheFooterContainer,
     TheTopBar,
     TheExperienceInformationContainer,
     TheMainText,
     TheProjectsContainer,
     TheContactUsForm,
-    // TheTechnologiesContainer,
-     },
+  },
   mounted() {
 
   },

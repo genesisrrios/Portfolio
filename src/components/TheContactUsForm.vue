@@ -2,7 +2,7 @@
   <section class="container">
   <div class="center">
   <h1 class="tittle tittle-custom">{{$t("Contactme.tittle")}}</h1>
-  <div>
+  <div style="padding:50px;">
     <form v-on:keyup.enter="sendEmail">
       <div class="row">
       <label for="name">{{$t("Contactme.name")}}<input type="text" id="name" name="name" v-model="name" require></label>
@@ -20,7 +20,8 @@
     <button class="btn" v-on:click="sendEmail">{{$t("Contactme.send")}}</button>
     </div>
     </div>
-    <snackbar v-if="showToast"  v-bind:show="showToast" :message="$t('Toast.emailSent')"/>
+    <TheSnackBar v-if="showToast"  v-bind:show="showToast" :message="$t('Toast.emailSent')"/>
+    <TheFooterContainer/>
   </section>
 </template>
 
@@ -29,12 +30,14 @@ const axios = require('axios');
 
 import { prototype } from 'events';
 
-import snackbar from './TheSnackBar';
+import TheSnackBar from './TheSnackBar';
+import TheFooterContainer from "./TheFooterContainer";
 
 export default {
   name: "TheContactUsForm",
   components:{
-    snackbar
+    TheSnackBar,
+    TheFooterContainer
   },
   data:function(){
     return{
@@ -66,7 +69,7 @@ export default {
 </script>
 <style scoped>
 .container{
-  height:110vh;
+  position: absolute;
   width: 100vw;  
 }
 h1{
