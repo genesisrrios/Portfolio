@@ -108,5 +108,12 @@ input{
 .tittle-custom{
   margin-bottom:60px;
 }
-
+@media screen and ( max-width: 768px )
+{
+.center{
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;    
+}
+}
 </style>

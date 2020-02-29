@@ -19,7 +19,7 @@ export default {
 @media screen and ( min-width: 300px )
 {
   .container{
-    height:80vh;
+    height:130vh;
     width: 100vw;
   }
   div .main-content{
