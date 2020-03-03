@@ -7,8 +7,8 @@
       <div class="column">
         <div class="box rounded-borders box-padding" v-on:click="openLink(project.Url)">
             <div class="rounded-borders box-padding">
-                <h1>{{project.Name}}</h1>
-                  <p class="project-description">{{project.Description}}</p>
+                <h1>{{$t(project.Name)}}</h1>
+                  <p class="project-description">{{$t(project.Description)}}</p>
                   <div class="row box-padding">
                     <div class="column"  v-for="image in project.Images" :key="image.Url">
                       <img class="image-styling" v-bind:src="image.Url" v-bind:alt="image.AltText">
@@ -28,8 +28,8 @@ export default {
       return{
         projectsList:[
           {
-            Name: this.$t('Projects.firstProject'),
-            Description:this.$t('Projects.firstProjectDescription'),
+            Name: 'Projects.firstProject',
+            Description:'Projects.firstProjectDescription',
             Images:
             [
               {
@@ -52,8 +52,8 @@ export default {
             Url:'Portfolio'
           },
           {
-            Name: this.$t('Projects.secondProject'),
-            Description:this.$t('Projects.secondProjectDescription'),
+            Name: 'Projects.secondProject',
+            Description:'Projects.secondProjectDescription',
             Images:
             [
               {
@@ -80,8 +80,8 @@ export default {
             Url:'EducationGotHacked'
           },
           {
-            Name: this.$t('Projects.thirdProject'),
-            Description:this.$t('Projects.thirdProjectDescription'),
+            Name: 'Projects.thirdProject',
+            Description:'Projects.thirdProjectDescription',
             Images:
             [
               {
@@ -108,8 +108,8 @@ export default {
             Url:'AgroHack'
           },
           {
-            Name: this.$t('Projects.fourthProject'),
-            Description:this.$t('Projects.fourthProjectDescription'),
+            Name: 'Projects.fourthProject',
+            Description:'Projects.fourthProjectDescription',
             Images:
             [
               {
@@ -126,10 +126,13 @@ export default {
         ]
       }
     },
+    mounted(){
+        console.log(this.$i18n);
+    },
     methods:{
       openLink:function(url){
         window.open('https://github.com/genesisrrios/'+url);
-    }
+    },
   },
 };
 </script>
