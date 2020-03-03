@@ -192,7 +192,7 @@ ul li{
 @media screen and ( min-width: 300px )
 {
 .container{
-  height:150vh;
+  height:350vh;
   width: 100vw;
 }
 p{
