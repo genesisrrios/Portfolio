@@ -150,7 +150,7 @@ export default {
   visibility: hidden;
 }
 .container{
-  height:160vh;
+  height:120vh;
   width: 100vw;
 }
 .row{

@@ -19,9 +19,9 @@ export default {
 @media screen and ( min-width: 300px )
 {
   .container{
-    height:130vh;
+    height:120vh;
     width: 100vw;
-  }
+}
   div .main-content{
   display: flex;
   flex-direction: column;
