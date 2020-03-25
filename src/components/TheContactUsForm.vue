@@ -51,10 +51,16 @@ export default {
   methods:{
     sendEmail: function(){
       var self = this;
-      const config = {
-         headers: {'Access-Control-Allow-Origin': '*'}
-      };
-      axios.get('/api/contactme?name=' + this.name + '&phone=' + this.phone + '&note=' + '&email=' + this.email, config)
+      // const config = {
+      //    headers: {'Access-Control-Allow-Origin': '*'}
+      // };
+      var parameters = {
+        name:this.name,
+        email:this.email,
+        phone:this.email,
+        note:this.note
+      }
+      axios.post('/api/contactme', parameters)
       .then(function (response) {
         if(response.status === 200)
           self.showToast = true;

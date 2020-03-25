@@ -2,6 +2,8 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const app = express();
 
+app.use(express.json());
+
 const transporter = nodemailer.createTransport({
     host: 'smtp.ethereal.email',
     port: 587,
@@ -10,14 +12,14 @@ const transporter = nodemailer.createTransport({
         pass: 'fedXC2VbWsV5rZhKx6'
     }
 });
-app.get('/api/contactme',(req, res) => {
+app.post('/api/contactme', (req, res) => {
 	const mailOptions = {
 		from: 'tia.collins6@ethereal.email',
 		to: 'genesisrriosweb@gmail.com',
-		subject: 'Cliente ' + req.query.email,
-		html: '<p>Nombre: ' + req.query.name + '</p>' + 
-		'<p>Email: ' + req.query.email + '</p> ' + ' <p>Telefono: ' +
-		req.query.phone + ' </p> ' + ' <p>Nota: ' + req.query.note + '</p>'
+		subject: 'Cliente ' + req.body.email,
+		html: '<p>Nombre: ' + req.body.name + '</p>' + 
+		'<p>Email: ' + req.body.email + '</p> ' + ' <p>Telefono: ' +
+		req.body.phone + ' </p> ' + ' <p>Nota: ' + req.body.note + '</p>'
 	};	
 	transporter.sendMail(mailOptions, function(error, response){
 		if(error){
