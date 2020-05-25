@@ -1,8 +1,9 @@
 import Vue from "vue"
 import App from "./App.vue"
 import VueI18n from 'vue-i18n'
-import i18n from './i18n'
-
+import i18n from "./i18n"
+import "../node_modules/skeleton-css/css/normalize.css"
+import "../node_modules/skeleton-css/css/skeleton.css"
 Vue.config.productionTip = false
 
 new Vue({

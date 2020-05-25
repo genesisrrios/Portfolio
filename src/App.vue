@@ -1,35 +1,34 @@
 <template>
-  <div id="app">
-    <TheTopBar />
-    <TheMainText id="about"/>    
-    <TheExperienceInformationContainer id="experience" />
-    <TheProjectsContainer id="projects"/>
-    <TheContactUsForm id="contactme"/>    
+  <div class="u-full-width u-max-full-width container">
+    <div id="app">
+      <TheTopBar />
+      <TheMainText id="about"/>    
+      <!-- <TheExperienceInformationContainer id="experience" />
+      <TheProjectsContainer id="projects"/>
+      <TheContactUsForm id="contactme"/> -->
     </div>
+  </div>
 </template>
 
 <script>
 import TheTopBar from "./components/TheTopBar";
-import TheExperienceInformationContainer from "./components/TheExperienceInformationContainer";
 import TheMainText from "./components/TheMainText";
-import TheProjectsContainer from "./components/TheProjectsContainer";
-import TheContactUsForm from "./components/TheContactUsForm";
-import TheSnackBar from "./components/TheSnackBar";
+// import TheExperienceInformationContainer from "./components/TheExperienceInformationContainer";
+// import TheProjectsContainer from "./components/TheProjectsContainer";
+// import TheContactUsForm from "./components/TheContactUsForm";
+// import TheSnackBar from "./components/TheSnackBar";
 
 export default {
   name: "app",
   components: { 
     TheTopBar,
-    TheExperienceInformationContainer,
-    TheMainText,
-    TheProjectsContainer,
-    TheContactUsForm,
+    TheMainText
+    // TheExperienceInformationContainer,
+    // TheProjectsContainer,
+    // TheContactUsForm,
   },
-  mounted() {
-
-  },
-  methods: {
-  }
+  mounted() {},
+  methods: {}
 };
 </script>
 <style>
@@ -60,9 +59,5 @@ h1{
   color:#305d8a;
   font-size: 2em; 
   text-align:center;
-}
-.center-tittle{
-  margin: auto;
-  width: 50%;
 }
 </style>

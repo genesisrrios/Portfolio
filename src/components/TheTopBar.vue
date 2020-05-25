@@ -1,7 +1,7 @@
 <template>
   <section>
     <header>
-            <!-- The hamburger class is used to draw three lines -->      
+    <!-- The hamburger class is used to draw three lines -->      
      <div class="hamburger" v-on:click="openResponsiveMenu">
         <div class="line"></div>
         <div class="line"></div>
@@ -97,6 +97,7 @@ export default {
 header{
   background:#9db6c9;
   padding:5px 20px;
+  height:75px;
 }
 ul{
   list-style-type: none;
@@ -227,4 +228,5 @@ a{
   vertical-align: top;
 }
 }
+
 </style>

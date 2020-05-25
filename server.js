@@ -14,7 +14,7 @@ const transporter = nodemailer.createTransport({
 });
 app.post('/api/contactme', (req, res) => {
 	const mailOptions = {
-		from: 'tia.collins6@ethereal.email',
+		from: 'genesisrrios@gmail.com',
 		to: 'genesisrriosweb@gmail.com',
 		subject: 'Cliente ' + req.body.email,
 		html: '<p>Nombre: ' + req.body.name + '</p>' + 
