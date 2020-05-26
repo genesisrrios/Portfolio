@@ -6,13 +6,11 @@
     <div class="row" v-for="project in projectsList" :key="project.Name">
       <div class="column">
         <div class="box rounded-borders box-padding" v-on:click="openLink(project.Url)">
-            <div class="rounded-borders box-padding">
-                <h1>{{$t(project.Name)}}</h1>
-                  <p class="project-description">{{$t(project.Description)}}</p>
-                  <div class="row box-padding">
-                    <div class="column"  v-for="image in project.Images" :key="image.Url">
-                      <img class="image-styling" v-bind:src="image.Url" v-bind:alt="image.AltText">
-                    </div>
+              <h1>{{$t(project.Name)}}</h1>
+              <p class="project-description">{{$t(project.Description)}}</p>
+              <div class="row box-padding">
+                <div class="column"  v-for="image in project.Images" :key="image.Url">
+                  <img class="image-styling" v-bind:src="image.Url" v-bind:alt="image.AltText">
                 </div>
             </div>
         </div>
@@ -145,15 +143,12 @@ p{color:white;font-size: 20px;}
  }
  @media screen and ( min-width: 300px ) and (max-width:991px)
 {
+
 .images{
-  visibility: hidden;
+  display: none;
 }
 .project-description{
-  visibility: hidden;
-}
-.container{
-  height:120vh;
-  width: 100vw;
+  display: none;
 }
 .row{
   display: -webkit-box;
@@ -184,15 +179,12 @@ p{color:white;font-size: 20px;}
   border-radius: 10px;
 }
 .image-styling{
-  visibility: hidden;
+  display: none;
 }
 }
 @media screen and ( min-width: 992px )
 {
-.container{
-  height:210vh;
-  width: 100vw;
-}
+
 .row{
   display: -webkit-box;
   display: -ms-flexbox;
