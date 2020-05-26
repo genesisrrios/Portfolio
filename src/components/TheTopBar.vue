@@ -151,6 +151,11 @@ a{
   color: #305d8a;
 }
 @media only screen and (max-width: 1280px) {
+header{
+  background:#9db6c9;
+  padding:5px 20px;
+  height:50px;
+}  
  .line{
   width: 35px;
   height: 5px;

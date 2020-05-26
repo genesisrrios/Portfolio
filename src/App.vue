@@ -1,11 +1,11 @@
 <template>
-  <div class="u-full-width u-max-full-width container">
+  <div class="u-full-width u-max-full-width">
     <div id="app">
       <TheTopBar />
       <TheMainText id="about"/>    
-      <!-- <TheExperienceInformationContainer id="experience" />
+      <TheExperienceInformationContainer id="experience" />
       <TheProjectsContainer id="projects"/>
-      <TheContactUsForm id="contactme"/> -->
+      <!--<TheContactUsForm id="contactme"/> -->
     </div>
   </div>
 </template>
@@ -13,8 +13,8 @@
 <script>
 import TheTopBar from "./components/TheTopBar";
 import TheMainText from "./components/TheMainText";
-// import TheExperienceInformationContainer from "./components/TheExperienceInformationContainer";
-// import TheProjectsContainer from "./components/TheProjectsContainer";
+import TheExperienceInformationContainer from "./components/TheExperienceInformationContainer";
+import TheProjectsContainer from "./components/TheProjectsContainer";
 // import TheContactUsForm from "./components/TheContactUsForm";
 // import TheSnackBar from "./components/TheSnackBar";
 
@@ -22,9 +22,9 @@ export default {
   name: "app",
   components: { 
     TheTopBar,
-    TheMainText
-    // TheExperienceInformationContainer,
-    // TheProjectsContainer,
+    TheMainText,
+    TheExperienceInformationContainer,
+    TheProjectsContainer
     // TheContactUsForm,
   },
   mounted() {},

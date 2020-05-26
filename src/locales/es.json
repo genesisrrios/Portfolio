@@ -45,7 +45,7 @@
     "tittle": "Proyectos",
     "goToProject":"Ir al projecto",
     "firstProject":"Portafolio",
-    "firstProjectDescription":"Mi portafolio personal que construí usando Vue.js, html, css y javascript. No hay 'Frameworks' de CSS.",
+    "firstProjectDescription":"Mi portafolio personal que construí utilizando Vue.js, html, css y javascript. No utiliza 'Frameworks' de CSS.",
     "secondProject":"La Educacion fue Hacked (Projecto de Hackaton)",
     "secondProjectDescription":"Intel lanzó un hackaton que se centró en la creación de software para capacitar a los estudiantes a aprender usando la tecnología. \nYo junto a un equipo de tres personas decidimos crear una aplicación web que presentara diferentes categorías de aprendizaje para todos los diferentes años escolares de los estudiantes \nla idea fue para ayudar a los estudiantes a aprender mejor y hacer que sea divertido usando juegos y aprendizaje interactivo. El proyecto todavía estaba en una fase de desarrollo muy temprana, pero el concepto estaba allí.",
     "thirdProject":"Agrohack (Projecto Hackaton)",
