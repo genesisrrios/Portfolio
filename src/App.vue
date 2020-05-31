@@ -5,6 +5,7 @@
       <TheMainText id="about"/>    
       <TheExperienceInformationContainer id="experience" />
       <TheProjectsContainer id="projects"/>
+      <TheFooterContainer/>
       <!--<TheContactUsForm id="contactme"/> -->
     </div>
   </div>
@@ -15,6 +16,7 @@ import TheTopBar from "./components/TheTopBar";
 import TheMainText from "./components/TheMainText";
 import TheExperienceInformationContainer from "./components/TheExperienceInformationContainer";
 import TheProjectsContainer from "./components/TheProjectsContainer";
+import TheFooterContainer from "./components/TheFooterContainer";
 // import TheContactUsForm from "./components/TheContactUsForm";
 // import TheSnackBar from "./components/TheSnackBar";
 
@@ -24,7 +26,8 @@ export default {
     TheTopBar,
     TheMainText,
     TheExperienceInformationContainer,
-    TheProjectsContainer
+    TheProjectsContainer,
+    TheFooterContainer
     // TheContactUsForm,
   },
   mounted() {},

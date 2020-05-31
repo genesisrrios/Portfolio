@@ -22,7 +22,7 @@
         <li class="header-items btn"><a href="#about">{{ $t("SideBar.about") }}</a></li>        
         <li class="header-items btn"><a href="#experience">{{ $t("SideBar.experience") }}</a></li>
         <li class="header-items btn"><a href="#projects">{{ $t("SideBar.projects") }}</a></li>        
-        <li class="header-items btn"><a href="#contactme">{{ $t("SideBar.contactme") }}</a></li>                
+        <!-- <li class="header-items btn"><a href="#contactme">{{ $t("SideBar.contactme") }}</a></li>                 -->
         </div>    
       </ul>
     </header>
